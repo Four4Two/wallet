@@ -75,7 +75,7 @@ export const BtcSend: Tx = {
   ],
 }
 
-export const FOXSend: Tx = {
+export const FURYSend: Tx = {
   address: '0x2d44C8B87D0Ec0D19A5249aDccf3BaCc43c5afe6',
   blockHash: '0x8e93bec969f88f472da18a88d68eaac9a4f4b6025a9e4699aedebfa8a08969c4',
   blockHeight: 13011202,

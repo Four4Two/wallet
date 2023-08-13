@@ -1,6 +1,6 @@
 import { Container, Stack } from '@chakra-ui/react'
 import { memo } from 'react'
-import foxPageBg from 'assets/foxpage-bg.png'
+import furyPageBg from 'assets/furypage-bg.png'
 import { Main } from 'components/Layout/Main'
 import { MultiHopTrade } from 'components/MultiHopTrade/MultiHopTrade'
 import { RecentTransactions } from 'pages/Dashboard/RecentTransactions'
@@ -18,7 +18,7 @@ export const Trade = memo(() => {
       flex={1}
       width='full'
       hideBreadcrumbs
-      bgImage={foxPageBg}
+      bgImage={furyPageBg}
       backgroundSize='contain'
       backgroundPosition='top center'
       backgroundRepeat='no-repeat'

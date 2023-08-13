@@ -5,7 +5,7 @@ import {
   cosmosChainId,
   ethChainId,
   foxAssetId,
-  foxyAssetId,
+  jinxAssetId,
   osmosisAssetId,
   osmosisChainId,
 } from '@shapeshiftoss/caip'
@@ -46,7 +46,7 @@ describe('lib/utils', () => {
     })
 
     test('returns the correct chain ID for a StakingId', () => {
-      const stakingId: StakingId = foxyAssetId as StakingId
+      const stakingId: StakingId = jinxAssetId as StakingId
       const result: ChainId = opportunityIdToChainId(stakingId)
       expect(result).toEqual(ethChainId)
     })

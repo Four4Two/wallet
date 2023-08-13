@@ -261,13 +261,13 @@ describe('portfolioSlice', () => {
         )
 
         const ethMarketData = mockMarketData()
-        const foxMarketData = mockMarketData({ price: '1' })
+        const furyMarketData = mockMarketData({ price: '1' })
 
         // dispatch market data
         store.dispatch(
           marketDataSlice.actions.setCryptoMarketData({
             [ethAssetId]: ethMarketData,
-            [foxAssetId]: foxMarketData,
+            [foxAssetId]: furyMarketData,
           }),
         )
 
@@ -310,13 +310,13 @@ describe('portfolioSlice', () => {
           ),
         )
         const ethMarketData = mockMarketData({ price: null })
-        const foxMarketData = mockMarketData({ price: null })
+        const furyMarketData = mockMarketData({ price: null })
 
         // dispatch market data
         store.dispatch(
           marketDataSlice.actions.setCryptoMarketData({
             [ethAssetId]: ethMarketData,
-            [foxAssetId]: foxMarketData,
+            [foxAssetId]: furyMarketData,
           }),
         )
 
@@ -364,13 +364,13 @@ describe('portfolioSlice', () => {
       it('can select crypto fiat account balance', () => {
         // dispatch market data
         const ethMarketData = mockMarketData({ price: '1000' })
-        const foxMarketData = mockMarketData({ price: '10' })
+        const furyMarketData = mockMarketData({ price: '10' })
         const usdcMarketData = mockMarketData({ price: '1' })
 
         store.dispatch(
           marketDataSlice.actions.setCryptoMarketData({
             [ethAssetId]: ethMarketData,
-            [foxAssetId]: foxMarketData,
+            [foxAssetId]: furyMarketData,
             [usdcAssetId]: usdcMarketData,
           }),
         )
@@ -497,13 +497,13 @@ describe('portfolioSlice', () => {
 
       // dispatch market data
       const ethMarketData = mockMarketData({ price: '1000' })
-      const foxMarketData = mockMarketData({ price: '10' })
+      const furyMarketData = mockMarketData({ price: '10' })
       const usdcMarketData = mockMarketData({ price: '1' })
 
       store.dispatch(
         marketDataSlice.actions.setCryptoMarketData({
           [ethAssetId]: ethMarketData,
-          [foxAssetId]: foxMarketData,
+          [foxAssetId]: furyMarketData,
           [usdcAssetId]: usdcMarketData,
         }),
       )
@@ -563,13 +563,13 @@ describe('portfolioSlice', () => {
 
       // dispatch market data
       const ethMarketData = mockMarketData({ price: '1000' })
-      const foxMarketData = mockMarketData({ price: '10' })
+      const furyMarketData = mockMarketData({ price: '10' })
       const usdcMarketData = mockMarketData({ price: '1' })
 
       store.dispatch(
         marketDataSlice.actions.setCryptoMarketData({
           [ethAssetId]: ethMarketData,
-          [foxAssetId]: foxMarketData,
+          [foxAssetId]: furyMarketData,
           [usdcAssetId]: usdcMarketData,
         }),
       )
@@ -632,14 +632,14 @@ describe('portfolioSlice', () => {
 
       // dispatch market data
       const ethMarketData = mockMarketData({ price: '1000' })
-      const foxMarketData = mockMarketData({ price: '10' })
+      const furyMarketData = mockMarketData({ price: '10' })
       const usdcMarketData = mockMarketData({ price: '1' })
       const zeroMarketData = mockMarketData({ price: '100' })
 
       store.dispatch(
         marketDataSlice.actions.setCryptoMarketData({
           [ethAssetId]: ethMarketData,
-          [foxAssetId]: foxMarketData,
+          [foxAssetId]: furyMarketData,
           [usdcAssetId]: usdcMarketData,
           [zeroAssetId]: zeroMarketData,
         }),
@@ -681,13 +681,13 @@ describe('portfolioSlice', () => {
 
       // dispatch market data
       const ethMarketData = mockMarketData({ price: '1000' })
-      const foxMarketData = mockMarketData({ price: '31.39' })
+      const furyMarketData = mockMarketData({ price: '31.39' })
       const usdcMarketData = mockMarketData({ price: '1' })
 
       store.dispatch(
         marketDataSlice.actions.setCryptoMarketData({
           [ethAssetId]: ethMarketData,
-          [foxAssetId]: foxMarketData,
+          [foxAssetId]: furyMarketData,
           [usdcAssetId]: usdcMarketData,
         }),
       )

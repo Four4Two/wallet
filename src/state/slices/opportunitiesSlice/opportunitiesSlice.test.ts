@@ -2,7 +2,7 @@ import type { AssetId } from '@shapeshiftoss/caip'
 import { ethAssetId, foxAssetId } from '@shapeshiftoss/caip'
 import { clearState, store } from 'state/store'
 
-import { foxEthLpAssetId } from './constants'
+import { furyEthLpAssetId } from './constants'
 import {
   fauxmesAccountId,
   gomesAccountId,
@@ -36,10 +36,10 @@ describe('opportunitiesSlice', () => {
           byId: {
             [mockLpContractOne]: {
               // The LP token AssetId
-              assetId: foxEthLpAssetId,
-              id: foxEthLpAssetId,
-              name: 'ETH/FOX Pool',
-              underlyingAssetId: foxEthLpAssetId,
+              assetId: furyEthLpAssetId,
+              id: furyEthLpAssetId,
+              name: 'ETH/FURY Pool',
+              underlyingAssetId: furyEthLpAssetId,
               provider: DefiProvider.UniV2,
               tvl: '424242',
               apy: '0.42',
@@ -65,10 +65,10 @@ describe('opportunitiesSlice', () => {
           byId: {
             [mockLpContractOne]: {
               // The LP token AssetId
-              assetId: foxEthLpAssetId,
-              id: foxEthLpAssetId,
-              name: 'ETH/FOX Pool',
-              underlyingAssetId: foxEthLpAssetId,
+              assetId: furyEthLpAssetId,
+              id: furyEthLpAssetId,
+              name: 'ETH/FURY Pool',
+              underlyingAssetId: furyEthLpAssetId,
               provider: DefiProvider.UniV2,
               tvl: '424242',
               apy: '0.42',
@@ -92,10 +92,10 @@ describe('opportunitiesSlice', () => {
           byId: {
             [mockLpContractTwo]: {
               // The LP token AssetId
-              assetId: foxEthLpAssetId,
-              id: foxEthLpAssetId,
-              name: 'ETH/FOX Pool',
-              underlyingAssetId: foxEthLpAssetId,
+              assetId: furyEthLpAssetId,
+              id: furyEthLpAssetId,
+              name: 'ETH/FURY Pool',
+              underlyingAssetId: furyEthLpAssetId,
               provider: DefiProvider.UniV2,
               tvl: '424242',
               apy: '0.42',
