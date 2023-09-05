@@ -88,7 +88,7 @@
     "routeTitle": "买入或卖出",
     "routeTitleForGem": "斜坡上的Gem",
     "title": "购买或出售加密货币",
-    "titleMessage": "ShapeShift 已与多家法定坡道供应商合作购买和销售加密货币。",
+    "titleMessage": "Blackfury 已与多家法定坡道供应商合作购买和销售加密货币。",
     "gem": "GEM",
     "junoPay": "JunoPay",
     "comingSoon": "敬请期待 ...",
@@ -104,7 +104,7 @@
     "insufficientCryptoAmountToSell": "出售的最低金额为$%{Amount}"
   },
   "connectWalletPage": {
-    "shapeshift": "ShapeShift 平台",
+    "shapeshift": "Blackfury 平台",
     "exploreThe": "探索",
     "defiUniverse": "去中心化金融的宇宙",
     "body": "100%免费。 完全开源。 社区拥有。 非托管。 高度私密。",
@@ -153,12 +153,12 @@
           "learnMore": "了解更多"
         }
       },
-      "foxyOverview": {
-        "header": "存入 FOX 来获取 FOXy 收益",
-        "body": "FOXy 是与 FOX 价格挂钩的锚定代币。 FOXy 可跨不同的 DeFi 协议工作，以获取尽可能好的收益。",
+      "jinxOverview": {
+        "header": "存入 FURY 来获取 FURYy 收益",
+        "body": "FURYy 是与 FURY 价格挂钩的锚定代币。 FURYy 可跨不同的 DeFi 协议工作，以获取尽可能好的收益。",
         "rewards": "您获得的收益将自动累积。",
-        "cta": "立即存入 FOX",
-        "foxyBalance": "FOXy 平衡",
+        "cta": "立即存入 FURY",
+        "jinxBalance": "FURYy 平衡",
         "withdrawals": "提款",
         "emptyWithdraws": "待处理或有效提款将在此处显示。",
         "availableDate": "有效 %{date}"
@@ -262,7 +262,7 @@
     "overview": "概述",
     "transactions": "交易",
     "tradeHistory": "交易记录",
-    "foxToken": "FOX Opportunities",
+    "furyToken": "FURY Opportunities",
     "featureFlags": "功能开关标志"
   },
   "transactionRow": {
@@ -303,7 +303,7 @@
       "thor": {
         "transferOut": "转出"
       },
-      "foxy": {
+      "jinx": {
         "stake": "质押",
         "unstake": "取消质押",
         "instantUnstake": "立即解除质押",
@@ -317,7 +317,7 @@
     "previewTrade": "预览交易",
     "rate": "兑换率",
     "minerFee": "矿工费",
-    "shapeshiftFee": "ShapeShift 收取费用",
+    "shapeshiftFee": "Blackfury 收取费用",
     "confirmDetails": "确认交易细节",
     "confirmAndTrade": "确认并交易",
     "complete": "交易完成",
@@ -329,8 +329,8 @@
     "viewTransaction": "查看交易",
     "tooltip": {
       "rate": "这是此交易对的预计兑换率。",
-      "minerFee": "此项为区块链网络处理交易所需收费。非 Shapeshift 收费。",
-      "shapeshiftFee": "ShapeShift 不额外收取任何费用 🎉"
+      "minerFee": "此项为区块链网络处理交易所需收费。非 Blackfury 收费。",
+      "shapeshiftFee": "Blackfury 不额外收取任何费用 🎉"
     },
     "errors": {
       "title": "出现问题",
@@ -698,7 +698,7 @@
       },
       "redirect": {
         "header": "打开 MetaMask App",
-        "body": "点击并在 Metamask 中打开 ShapeShift 仪表盘",
+        "body": "点击并在 Metamask 中打开 Blackfury 仪表盘",
         "button": "打开"
       }
     },
@@ -735,8 +735,8 @@
         "showWords": "显示助记词"
       },
       "start": {
-        "header": "ShapeShift 钱包",
-        "body": "您可以拥有多个 ShapeShift 钱包。您可以加载一个钱包；使用助记词导入一个钱包；或者创建一个新钱包。",
+        "header": "Blackfury 钱包",
+        "body": "您可以拥有多个 Blackfury 钱包。您可以加载一个钱包；使用助记词导入一个钱包；或者创建一个新钱包。",
         "import": "导入钱包",
         "create": "创建新钱包",
         "load": "加载已保存的钱包"
@@ -786,15 +786,15 @@
         "confirmDelete": "您确定删除此钱包的昵称吗？"
       },
       "legacy": {
-        "deprecatedWarning": "ShapeShift登录已弃用",
+        "deprecatedWarning": "Blackfury登录已弃用",
         "learnMore": "了解更多",
         "alreadySavedConfirm": "我确认我的秘密恢复短语已经安全备份。",
-        "mobileWalletTitle": "ShapeShift移动端钱包",
-        "importInformations": "要继续使用ShapeShift移动端钱包，您需要将其导入。",
+        "mobileWalletTitle": "Blackfury移动端钱包",
+        "importInformations": "要继续使用Blackfury移动端钱包，您需要将其导入。",
         "importWallet": "导入钱包",
-        "haveMobileWallet": "拥有一个ShapeShift移动端钱包?",
-        "loginWithAccount": "使用ShapeShift帐户登录",
-        "loginInformations": "输入您的电子邮件地址和密码，您使用登录您的ShapeShift移动端应用程序。",
+        "haveMobileWallet": "拥有一个Blackfury移动端钱包?",
+        "loginWithAccount": "使用Blackfury帐户登录",
+        "loginInformations": "输入您的电子邮件地址和密码，您使用登录您的Blackfury移动端应用程序。",
         "loginSuccess": "登录成功",
         "emailAddress": "电子邮件地址",
         "password": "密码",
@@ -803,7 +803,7 @@
         "invalidCaptcha": "验证码不可用",
         "captchaRequired": "验证码是必需的",
         "invalidLogin": "无效的登录",
-        "noWallet": "找不到用于您登录的原生ShapeShift钱包。如果您觉得这条消息是错误的，请联系ShapeShift提供帮助。",
+        "noWallet": "找不到用于您登录的原生Blackfury钱包。如果您觉得这条消息是错误的，请联系Blackfury提供帮助。",
         "decryptionError": "在解密你的钱包时出了问题。",
         "twoFactorAuthentication": "双因素身份验证",
         "twoFactorPlaceholder": "6位代码",
@@ -814,7 +814,7 @@
     },
     "selectModal": {
       "header": "连接一个钱包",
-      "body": "连接一个钱包代表您同意接受 ShapeShift 的服务条款并确认您已经阅读并理解 Shapeshift 的免责声明。",
+      "body": "连接一个钱包代表您同意接受 Blackfury 的服务条款并确认您已经阅读并理解 Blackfury 的免责声明。",
       "footer": "还没有钱包？",
       "create": "创建一个"
     },
@@ -927,7 +927,7 @@
     },
     "downloadCSV": "下载 CSV",
     "csv": {
-      "fileName": "ShapeShift 交易历史",
+      "fileName": "Blackfury 交易历史",
       "txid": "发送 ID",
       "type": "交易类型",
       "timestamp": "时间戳",

@@ -198,9 +198,7 @@ export const ReceiveSummary: FC<ReceiveSummaryProps> = memo(
               <Row>
                 <HelperTooltip label={translate('trade.tooltip.shapeshiftFee')}>
                   <Row.Label>
-                    <Text
-                      translation={['trade.tradeFeeSource', { tradeFeeSource: 'ShapeShift' }]}
-                    />
+                    <Text translation={['trade.tradeFeeSource', { tradeFeeSource: 'BlackFury' }]} />
                   </Row.Label>
                 </HelperTooltip>
                 <Row.Value>

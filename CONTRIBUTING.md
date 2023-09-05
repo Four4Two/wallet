@@ -1,13 +1,13 @@
-## Contributing to ShapeShift Web
+## Contributing to BlackFury Web
 
 #### Submitting an Issue
 
 - **Do not open a GitHub issue if the bug you found is a security
   vulnerability**.
 
-  Please see ShapeShift's [responsible disclosure program](https://corp.shapeshift.io/responsible-disclosure-program/).
+  Please see BlackFury's [responsible disclosure program](https://corp.shapeshift.io/responsible-disclosure-program/).
 
-- When contributing to ShapeShift Web, please discuss the change you want to make via
+- When contributing to BlackFury Web, please discuss the change you want to make via
   a GitHub issue before making a change and submitting a PR.
 
 #### Submitting a Patch
@@ -34,10 +34,10 @@ Our maintainers are committed to reviewing patches in a timely manner. That
 said, we do have other things on our plate, so please be patient.
 
 In order to ensure high quality of the codebase, we require sign-off from at
-least one ShapeShift Fox. If you use GPG, feel free to sign your commits.
+least one BlackFury Jinx. If you use GPG, feel free to sign your commits.
 
 Once your patch has been reviewed and has been accepted, you are free to merge it.
 
 Happy HODLing,
 
-ShapeShift Team
+BlackFury Team

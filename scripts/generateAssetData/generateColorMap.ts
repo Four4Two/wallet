@@ -10,6 +10,7 @@ import { atom, bitcoin, bitcoincash, dogecoin, litecoin, thorchain } from './bas
 import * as bnbsmartchain from './bnbsmartchain'
 import * as ethereum from './ethereum'
 import * as gnosis from './gnosis'
+import * as highbury from './highbury'
 import * as optimism from './optimism'
 import * as osmosis from './osmosis'
 import * as polygon from './polygon'
@@ -26,6 +27,7 @@ const generateColorMap = async () => {
   const bnbsmartchainAssets = await bnbsmartchain.getAssets()
   const polygonAssets = await polygon.getAssets()
   const gnosisAssets = await gnosis.getAssets()
+  const highburyAssets = await highbury.getAssets()
 
   // all assets, included assets to be blacklisted
   const unfilteredAssetData: Asset[] = [
@@ -42,6 +44,7 @@ const generateColorMap = async () => {
     ...bnbsmartchainAssets,
     ...polygonAssets,
     ...gnosisAssets,
+    ...highburyAssets,
   ]
   // remove blacklisted assets
   const filteredAssetData = filterOutBlacklistedAssets(unfilteredAssetData)

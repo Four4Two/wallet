@@ -8,10 +8,11 @@ import {
   cosmosAssetId,
   dogeAssetId,
   ethAssetId,
-  foxyAssetId,
   fromAccountId,
   fromAssetId,
   gnosisAssetId,
+  highburyAssetId,
+  jinxyAssetId,
   ltcAssetId,
   optimismAssetId,
   osmosisAssetId,
@@ -71,8 +72,8 @@ import {
 } from '../common-selectors'
 import {
   DEFI_PROVIDER_TO_METADATA,
-  foxEthLpAssetId,
-  foxEthStakingIds,
+  jinxEthLpAssetId,
+  jinxEthStakingIds,
 } from '../opportunitiesSlice/constants'
 import { selectGetReadOnlyOpportunities } from '../opportunitiesSlice/selectors/readonly'
 import type { DefiProvider, StakingId, UserStakingId } from '../opportunitiesSlice/types'
@@ -106,6 +107,7 @@ export const FEE_ASSET_IDS = [
   optimismAssetId,
   bscAssetId,
   polygonAssetId,
+  highburyAssetId,
   gnosisAssetId,
 ]
 
@@ -196,10 +198,10 @@ export const selectPortfolioTotalUserCurrencyBalanceExcludeEarnDupes = createSel
     const readOnlyOpportunitiesDuplicates = Object.values(
       readOnlyOpportunities.data?.opportunities ?? {},
     ).map(opportunity => opportunity.assetId)
-    // ETH/FOX LP token, FOXy, and other held tokens can be both portfolio assets, but also part of DeFi opportunities
+    // ETH/JINX LP token, JINXy, and other held tokens can be both portfolio assets, but also part of DeFi opportunities
     // With the current architecture (having them both as portfolio assets and earn opportunities), we have to remove these two some place or another
     // This obviously won't scale as we support more LP tokens, but for now, this at least gives this deduction a sane home we can grep with `dupes` or `duplicates`
-    const portfolioEarnAssetIdsDuplicates = [foxEthLpAssetId, foxyAssetId].concat(
+    const portfolioEarnAssetIdsDuplicates = [jinxEthLpAssetId, jinxyAssetId].concat(
       readOnlyOpportunitiesDuplicates,
     )
     return Object.entries(portfolioUserCurrencyBalances)
@@ -252,7 +254,7 @@ export const selectFirstAccountIdByChainId = createCachedSelector(
 
 /**
  * selects portfolio account ids that *can* contain an assetId
- * e.g. we may be swapping into a new EVM account that does not necessarily contain FOX
+ * e.g. we may be swapping into a new EVM account that does not necessarily contain JINX
  * but can contain it
  */
 export const selectPortfolioAccountIdsByAssetId = createCachedSelector(
@@ -303,8 +305,8 @@ export const selectBalanceChartCryptoBalancesByAccountIdAboveThreshold =
         return acc
       }, cloneDeep(rawBalances))
       // TODO: add LP portfolio amount to this
-      const foxEthLpTotalBalancesIncludingDelegations = aggregatedEarnUserStakingOpportunities
-        ?.filter(opportunity => foxEthStakingIds.includes(opportunity.assetId as StakingId))
+      const jinxEthLpTotalBalancesIncludingDelegations = aggregatedEarnUserStakingOpportunities
+        ?.filter(opportunity => jinxEthStakingIds.includes(opportunity.assetId as StakingId))
         .reduce<BN>((acc: BN, opportunity) => {
           const asset = assetsById[opportunity.underlyingAssetId]
           return asset
@@ -314,8 +316,8 @@ export const selectBalanceChartCryptoBalancesByAccountIdAboveThreshold =
             : acc
         }, bn(0))
         .toFixed()
-      totalBalancesIncludingAllDelegationStates[foxEthLpAssetId] =
-        foxEthLpTotalBalancesIncludingDelegations
+      totalBalancesIncludingAllDelegationStates[jinxEthLpAssetId] =
+        jinxEthLpTotalBalancesIncludingDelegations
 
       const aboveThresholdBalances = Object.entries(
         totalBalancesIncludingAllDelegationStates,

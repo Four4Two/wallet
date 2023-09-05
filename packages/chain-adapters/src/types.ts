@@ -26,6 +26,7 @@ type ChainSpecificAccount<T> = ChainSpecific<
     [KnownChainIds.BnbSmartChainMainnet]: evm.Account
     [KnownChainIds.PolygonMainnet]: evm.Account
     [KnownChainIds.GnosisMainnet]: evm.Account
+    [KnownChainIds.HighburyMainnet]: evm.Account
     [KnownChainIds.BitcoinMainnet]: utxo.Account
     [KnownChainIds.BitcoinCashMainnet]: utxo.Account
     [KnownChainIds.DogecoinMainnet]: utxo.Account
@@ -64,6 +65,7 @@ type ChainSpecificFeeData<T> = ChainSpecific<
     [KnownChainIds.BnbSmartChainMainnet]: evm.FeeData
     [KnownChainIds.PolygonMainnet]: evm.FeeData
     [KnownChainIds.GnosisMainnet]: evm.FeeData
+    [KnownChainIds.HighburyMainnet]: evm.FeeData
     [KnownChainIds.BitcoinMainnet]: utxo.FeeData
     [KnownChainIds.BitcoinCashMainnet]: utxo.FeeData
     [KnownChainIds.DogecoinMainnet]: utxo.FeeData
@@ -128,12 +130,13 @@ export type ChainSignTx = {
   [KnownChainIds.BnbSmartChainMainnet]: ETHSignTx
   [KnownChainIds.PolygonMainnet]: ETHSignTx
   [KnownChainIds.GnosisMainnet]: ETHSignTx
+  [KnownChainIds.HighburyMainnet]: ETHSignTx
   [KnownChainIds.BitcoinMainnet]: BTCSignTx
   [KnownChainIds.BitcoinCashMainnet]: BTCSignTx
   [KnownChainIds.DogecoinMainnet]: BTCSignTx
   [KnownChainIds.LitecoinMainnet]: BTCSignTx
-  [KnownChainIds.CosmosMainnet]: CosmosSignTx
   [KnownChainIds.OsmosisMainnet]: OsmosisSignTx
+  [KnownChainIds.CosmosMainnet]: CosmosSignTx
   [KnownChainIds.ThorchainMainnet]: ThorchainSignTx
 }
 
@@ -146,6 +149,7 @@ export type BuildSendTxInput<T extends ChainId> = {
   accountNumber: number
   sendMax?: boolean
   memo?: string
+  customNonce?: string
 } & ChainSpecificBuildTxData<T>
 
 export type BuildSendApiTxInput<T extends KnownChainIds> = Omit<BuildSendTxInput<T>, 'wallet'> & {
@@ -165,12 +169,13 @@ export type ChainSpecificBuildTxData<T> = ChainSpecific<
     [KnownChainIds.BnbSmartChainMainnet]: evm.BuildTxInput
     [KnownChainIds.PolygonMainnet]: evm.BuildTxInput
     [KnownChainIds.GnosisMainnet]: evm.BuildTxInput
+    [KnownChainIds.HighburyMainnet]: evm.BuildTxInput
     [KnownChainIds.BitcoinMainnet]: utxo.BuildTxInput
     [KnownChainIds.BitcoinCashMainnet]: utxo.BuildTxInput
     [KnownChainIds.DogecoinMainnet]: utxo.BuildTxInput
     [KnownChainIds.LitecoinMainnet]: utxo.BuildTxInput
-    [KnownChainIds.CosmosMainnet]: cosmossdk.BuildTxInput
     [KnownChainIds.OsmosisMainnet]: cosmossdk.BuildTxInput
+    [KnownChainIds.CosmosMainnet]: cosmossdk.BuildTxInput
     [KnownChainIds.ThorchainMainnet]: cosmossdk.BuildTxInput
   }
 >
@@ -251,6 +256,7 @@ type ChainSpecificGetFeeDataInput<T> = ChainSpecific<
     [KnownChainIds.BnbSmartChainMainnet]: evm.GetFeeDataInput
     [KnownChainIds.PolygonMainnet]: evm.GetFeeDataInput
     [KnownChainIds.GnosisMainnet]: evm.GetFeeDataInput
+    [KnownChainIds.HighburyMainnet]: evm.GetFeeDataInput
     [KnownChainIds.BitcoinMainnet]: utxo.GetFeeDataInput
     [KnownChainIds.BitcoinCashMainnet]: utxo.GetFeeDataInput
     [KnownChainIds.DogecoinMainnet]: utxo.GetFeeDataInput
@@ -302,14 +308,15 @@ export type ZrxGasApiResponse = {
 
 export enum ChainAdapterDisplayName {
   Thorchain = 'THORChain',
-  Osmosis = 'Osmosis',
   Ethereum = 'Ethereum',
   Avalanche = 'Avalanche C-Chain',
   Optimism = 'Optimism',
   BnbSmartChain = 'BNB Smart Chain',
   Polygon = 'Polygon',
   Gnosis = 'Gnosis',
+  Highbury = 'Highbury',
   Cosmos = 'Cosmos',
+  Osmosis = 'Osmosis',
   Bitcoin = 'Bitcoin',
   BitcoinCash = 'Bitcoin Cash',
   Dogecoin = 'Dogecoin',

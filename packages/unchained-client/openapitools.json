@@ -70,6 +70,19 @@
           "useSingleRequestParameter": true
         }
       },
+      "osmosis": {
+        "inputSpec": "https://raw.githubusercontent.com/Four4Two/unchained/develop/go/coinstacks/osmosis/api/swagger.json",
+        "generatorName": "typescript-fetch",
+        "output": "#{cwd}/src/generated/osmosis",
+        "enablePostProcessFile": true,
+        "reservedWordsMappings": {
+          "in": "in"
+        },
+        "additionalProperties": {
+          "supportsES6": "true",
+          "useSingleRequestParameter": true
+        }
+      },
       "dogecoin": {
         "inputSpec": "https://raw.githubusercontent.com/shapeshift/unchained/develop/node/coinstacks/dogecoin/api/src/swagger.json",
         "generatorName": "typescript-fetch",
@@ -148,10 +161,10 @@
           "useSingleRequestParameter": true
         }
       },
-      "osmosis": {
-        "inputSpec": "https://raw.githubusercontent.com/shapeshift/unchained/develop/go/coinstacks/osmosis/api/swagger.json",
+      "highbury": {
+        "inputSpec": "https://raw.githubusercontent.com/Four4Two/unchained/develop/node/coinstacks/highbury/api/src/swagger.json",
         "generatorName": "typescript-fetch",
-        "output": "#{cwd}/src/generated/osmosis",
+        "output": "#{cwd}/src/generated/highbury",
         "enablePostProcessFile": true,
         "reservedWordsMappings": {
           "in": "in"

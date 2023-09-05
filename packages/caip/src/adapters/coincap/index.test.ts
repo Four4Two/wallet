@@ -28,13 +28,13 @@ describe('adapters:coincap', () => {
       expect(coincapToAssetId('ethereum')).toEqual(assetId)
     })
 
-    it('can get AssetId id for FOX', () => {
+    it('can get AssetId id for FURY', () => {
       const chainNamespace = CHAIN_NAMESPACE.Evm
       const chainReference = CHAIN_REFERENCE.EthereumMainnet
       const assetNamespace = 'erc20'
-      const assetReference = '0xc770eefad204b5180df6a14ee197d99d808ee52d'
+      const assetReference = '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734'
       const assetId = toAssetId({ chainNamespace, chainReference, assetNamespace, assetReference })
-      expect(coincapToAssetId('fox-token')).toEqual(assetId)
+      expect(coincapToAssetId('fury-token')).toEqual(assetId)
     })
   })
 
@@ -48,18 +48,6 @@ describe('adapters:coincap', () => {
       assetReference: ASSET_REFERENCE.Cosmos,
     })
     expect(coincapToAssetId('cosmos')).toEqual(assetId)
-  })
-
-  it('can get AssetId for osmosis', () => {
-    const chainNamespace = CHAIN_NAMESPACE.CosmosSdk
-    const chainReference = CHAIN_REFERENCE.OsmosisMainnet
-    const assetId = toAssetId({
-      chainNamespace,
-      chainReference,
-      assetNamespace: 'slip44',
-      assetReference: ASSET_REFERENCE.Osmosis,
-    })
-    expect(coincapToAssetId('osmosis')).toEqual(assetId)
   })
 
   describe('assetIdToCoinCap', () => {
@@ -87,13 +75,13 @@ describe('adapters:coincap', () => {
       expect(assetIdToCoinCap(assetId)).toEqual('ethereum')
     })
 
-    it('can get coincap id for FOX', () => {
+    it('can get coincap id for FURY', () => {
       const chainNamespace = CHAIN_NAMESPACE.Evm
       const chainReference = CHAIN_REFERENCE.EthereumMainnet
       const assetNamespace = 'erc20'
-      const assetReference = '0xc770eefad204b5180df6a14ee197d99d808ee52d'
+      const assetReference = '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734'
       const assetId = toAssetId({ chainNamespace, chainReference, assetNamespace, assetReference })
-      expect(assetIdToCoinCap(assetId)).toEqual('fox-token')
+      expect(assetIdToCoinCap(assetId)).toEqual('fury-token')
     })
 
     it('can get coincap id for cosmos AssetId', () => {
@@ -106,18 +94,6 @@ describe('adapters:coincap', () => {
         assetReference: ASSET_REFERENCE.Cosmos,
       })
       expect(assetIdToCoinCap(assetId)).toEqual('cosmos')
-    })
-
-    it('can get coincap id for osmosis AssetId', () => {
-      const chainNamespace = CHAIN_NAMESPACE.CosmosSdk
-      const chainReference = CHAIN_REFERENCE.OsmosisMainnet
-      const assetId = toAssetId({
-        chainNamespace,
-        chainReference,
-        assetNamespace: 'slip44',
-        assetReference: ASSET_REFERENCE.Osmosis,
-      })
-      expect(assetIdToCoinCap(assetId)).toEqual('osmosis')
     })
   })
 })

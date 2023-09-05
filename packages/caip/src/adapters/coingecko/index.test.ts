@@ -45,30 +45,38 @@ describe('adapters:coingecko', () => {
       expect(coingeckoToAssetIds('ethereum')).toEqual([ethOnEthereum, ethOnOptimism])
     })
 
-    it('can get AssetIds id for FOX', () => {
+    it('can get AssetIds id for FURY', () => {
       const assetNamespace = 'erc20'
-      const foxOnEthereum = toAssetId({
+      const furyOnEthereum = toAssetId({
         chainNamespace: CHAIN_NAMESPACE.Evm,
         chainReference: CHAIN_REFERENCE.EthereumMainnet,
         assetNamespace,
-        assetReference: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
+        assetReference: '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
       })
-      const foxOnPolygon = toAssetId({
+      const furyOnPolygon = toAssetId({
         chainNamespace: CHAIN_NAMESPACE.Evm,
         chainReference: CHAIN_REFERENCE.PolygonMainnet,
         assetNamespace,
         assetReference: '0x65a05db8322701724c197af82c9cae41195b0aa8',
       })
-      const foxOnGnosis = toAssetId({
+      const furyOnGnosis = toAssetId({
         chainNamespace: CHAIN_NAMESPACE.Evm,
         chainReference: CHAIN_REFERENCE.GnosisMainnet,
         assetNamespace,
         assetReference: '0x21a42669643f45bc0e086b8fc2ed70c23d67509d',
       })
-      expect(coingeckoToAssetIds('shapeshift-fox-token')).toEqual([
-        foxOnEthereum,
-        foxOnPolygon,
-        foxOnGnosis,
+      const furyOnOptimism = toAssetId({
+        chainNamespace: CHAIN_NAMESPACE.Evm,
+        chainReference: CHAIN_REFERENCE.OptimismMainnet,
+        assetNamespace,
+        assetReference: '0xf1a0da3367bc7aa04f8d94ba57b862ff37ced174',
+      })
+
+      expect(coingeckoToAssetIds('fanfury')).toEqual([
+        furyOnEthereum,
+        furyOnOptimism,
+        furyOnPolygon,
+        furyOnGnosis,
       ])
     })
 
@@ -86,18 +94,6 @@ describe('adapters:coingecko', () => {
         assetReference: '0x0eb3a705fc54725037cc9e008bdede697f62f335',
       })
       expect(coingeckoToAssetIds('cosmos')).toEqual([atomOnCosmos, atomOnBsc])
-    })
-
-    it('can get AssetIds for osmosis', () => {
-      const chainNamespace = CHAIN_NAMESPACE.CosmosSdk
-      const chainReference = CHAIN_REFERENCE.OsmosisMainnet
-      const assetId = toAssetId({
-        chainNamespace,
-        chainReference,
-        assetNamespace: 'slip44',
-        assetReference: ASSET_REFERENCE.Osmosis,
-      })
-      expect(coingeckoToAssetIds('osmosis')).toEqual([assetId])
     })
 
     it('can get AssetIds for USD Coin on EVM Chains', () => {
@@ -175,13 +171,13 @@ describe('adapters:coingecko', () => {
       expect(assetIdToCoingecko(assetId)).toEqual('ethereum')
     })
 
-    it('can get CoinGecko id for FOX', () => {
+    it('can get CoinGecko id for FURY', () => {
       const chainNamespace = CHAIN_NAMESPACE.Evm
       const chainReference = CHAIN_REFERENCE.EthereumMainnet
       const assetNamespace = 'erc20'
-      const assetReference = '0xc770eefad204b5180df6a14ee197d99d808ee52d'
+      const assetReference = '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734'
       const assetId = toAssetId({ chainNamespace, chainReference, assetNamespace, assetReference })
-      expect(assetIdToCoingecko(assetId)).toEqual('shapeshift-fox-token')
+      expect(assetIdToCoingecko(assetId)).toEqual('fanfury')
     })
 
     it('can get CoinGecko id for cosmos AssetId', () => {
@@ -194,18 +190,6 @@ describe('adapters:coingecko', () => {
         assetReference: ASSET_REFERENCE.Cosmos,
       })
       expect(assetIdToCoingecko(assetId)).toEqual('cosmos')
-    })
-
-    it('can get CoinGecko id for osmosis AssetId', () => {
-      const chainNamespace = CHAIN_NAMESPACE.CosmosSdk
-      const chainReference = CHAIN_REFERENCE.OsmosisMainnet
-      const assetId = toAssetId({
-        chainNamespace,
-        chainReference,
-        assetNamespace: 'slip44',
-        assetReference: ASSET_REFERENCE.Osmosis,
-      })
-      expect(assetIdToCoingecko(assetId)).toEqual('osmosis')
     })
 
     it('can get CoinGecko id for polygon AssetId', () => {

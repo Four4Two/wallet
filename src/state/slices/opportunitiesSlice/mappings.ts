@@ -16,20 +16,20 @@ import {
   cosmosSdkStakingOpportunitiesUserDataResolver,
 } from './resolvers/cosmosSdk'
 import {
-  ethFoxStakingMetadataResolver,
-  ethFoxStakingOpportunityIdsResolver,
-  ethFoxStakingUserDataResolver,
-} from './resolvers/ethFoxStaking'
-import {
-  foxyStakingOpportunitiesMetadataResolver,
-  foxyStakingOpportunitiesUserDataResolver,
-  foxyStakingOpportunityIdsResolver,
-} from './resolvers/foxy'
+  ethJinxStakingMetadataResolver,
+  ethJinxStakingOpportunityIdsResolver,
+  ethJinxStakingUserDataResolver,
+} from './resolvers/ethJinxStaking'
 import {
   idleStakingOpportunitiesMetadataResolver,
   idleStakingOpportunitiesUserDataResolver,
   idleStakingOpportunityIdsResolver,
 } from './resolvers/idle'
+import {
+  jinxyStakingOpportunitiesMetadataResolver,
+  jinxyStakingOpportunitiesUserDataResolver,
+  jinxyStakingOpportunityIdsResolver,
+} from './resolvers/jinxy'
 import {
   osmosisLpOpportunitiesMetadataResolver,
   osmosisLpOpportunityIdsResolver,
@@ -47,8 +47,8 @@ import {
 import { DefiProvider, DefiType } from './types'
 
 export const DefiProviderToMetadataResolverByDeFiType = {
-  [`${DefiProvider.EthFoxStaking}`]: {
-    [`${DefiType.Staking}`]: ethFoxStakingMetadataResolver,
+  [`${DefiProvider.EthJinxStaking}`]: {
+    [`${DefiType.Staking}`]: ethJinxStakingMetadataResolver,
   },
 }
 
@@ -68,8 +68,8 @@ export const DefiProviderToOpportunitiesMetadataResolverByDeFiType = {
   [`${DefiProvider.ThorchainSavers}`]: {
     [`${DefiType.Staking}`]: thorchainSaversStakingOpportunitiesMetadataResolver,
   },
-  [`${DefiProvider.ShapeShift}`]: {
-    [`${DefiType.Staking}`]: foxyStakingOpportunitiesMetadataResolver,
+  [`${DefiProvider.BlackFury}`]: {
+    [`${DefiType.Staking}`]: jinxyStakingOpportunitiesMetadataResolver,
   },
 }
 
@@ -77,8 +77,8 @@ export const DefiProviderToOpportunitiesUserDataResolverByDeFiType = {
   [`${DefiProvider.Idle}`]: {
     [`${DefiType.Staking}`]: idleStakingOpportunitiesUserDataResolver,
   },
-  [`${DefiProvider.ShapeShift}`]: {
-    [`${DefiType.Staking}`]: foxyStakingOpportunitiesUserDataResolver,
+  [`${DefiProvider.BlackFury}`]: {
+    [`${DefiType.Staking}`]: jinxyStakingOpportunitiesUserDataResolver,
   },
   [`${DefiProvider.ThorchainSavers}`]: {
     [`${DefiType.Staking}`]: thorchainSaversStakingOpportunitiesUserDataResolver,
@@ -92,8 +92,8 @@ export const DefiProviderToOpportunityIdsResolverByDeFiType = {
   [`${DefiProvider.UniV2}`]: {
     [`${DefiType.LiquidityPool}`]: uniV2LpLpOpportunityIdsResolver,
   },
-  [`${DefiProvider.EthFoxStaking}`]: {
-    [`${DefiType.Staking}`]: ethFoxStakingOpportunityIdsResolver,
+  [`${DefiProvider.EthJinxStaking}`]: {
+    [`${DefiType.Staking}`]: ethJinxStakingOpportunityIdsResolver,
   },
   [`${DefiProvider.Idle}`]: {
     [`${DefiType.Staking}`]: idleStakingOpportunityIdsResolver,
@@ -104,8 +104,8 @@ export const DefiProviderToOpportunityIdsResolverByDeFiType = {
   [`${DefiProvider.ThorchainSavers}`]: {
     [`${DefiType.Staking}`]: thorchainSaversOpportunityIdsResolver,
   },
-  [`${DefiProvider.ShapeShift}`]: {
-    [`${DefiType.Staking}`]: foxyStakingOpportunityIdsResolver,
+  [`${DefiProvider.BlackFury}`]: {
+    [`${DefiType.Staking}`]: jinxyStakingOpportunityIdsResolver,
   },
   [`${DefiProvider.CosmosSdk}`]: {
     [`${DefiType.Staking}`]: cosmosSdkOpportunityIdsResolver,
@@ -116,8 +116,8 @@ export const DefiProviderToUserDataResolverByDeFiType = {
   [`${DefiProvider.UniV2}`]: {
     [`${DefiType.LiquidityPool}`]: uniV2LpUserDataResolver,
   },
-  [`${DefiProvider.EthFoxStaking}`]: {
-    [`${DefiType.Staking}`]: ethFoxStakingUserDataResolver,
+  [`${DefiProvider.EthJinxStaking}`]: {
+    [`${DefiType.Staking}`]: ethJinxStakingUserDataResolver,
   },
 }
 
@@ -158,7 +158,7 @@ export const CHAIN_ID_TO_SUPPORTED_DEFI_OPPORTUNITIES = {
       defiType: DefiType.LiquidityPool,
     },
     {
-      defiProvider: DefiProvider.EthFoxStaking,
+      defiProvider: DefiProvider.EthJinxStaking,
       defiType: DefiType.Staking,
     },
     {
@@ -170,7 +170,7 @@ export const CHAIN_ID_TO_SUPPORTED_DEFI_OPPORTUNITIES = {
       defiType: DefiType.Staking,
     },
     {
-      defiProvider: DefiProvider.ShapeShift,
+      defiProvider: DefiProvider.BlackFury,
       defiType: DefiType.Staking,
     },
   ],

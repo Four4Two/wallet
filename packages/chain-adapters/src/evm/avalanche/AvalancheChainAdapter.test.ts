@@ -44,7 +44,7 @@ const getWallet = async (): Promise<ETHWallet> => {
 
 const gasPrice = '42'
 const gasLimit = '42000'
-const contractAddress = '0xc770eefad204b5180df6a14ee197d99d808ee52d'
+const contractAddress = '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734'
 const value = 400
 
 const makeChainSpecific = (chainSpecificAdditionalProps?: { contractAddress: string }) =>
@@ -76,10 +76,10 @@ const makeGetAccountMockResponse = (balance: {
   nonce: 2,
   tokens: [
     {
-      assetId: 'eip155:43114/erc20:0xc770eefad204b5180df6a14ee197d99d808ee52d',
+      assetId: 'eip155:43114/erc20:0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
       balance: balance.tokenBalance,
       type: 'ERC20',
-      contract: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
+      contract: '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
     },
   ],
 })
@@ -564,7 +564,7 @@ describe('AvalancheChainAdapter', () => {
           gasLimit: numberToHex(gasLimit),
           gasPrice: numberToHex(gasPrice),
           nonce: '0x2',
-          to: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
+          to: '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
           value: '0x0',
         },
       })
@@ -601,7 +601,7 @@ describe('AvalancheChainAdapter', () => {
           gasLimit: numberToHex(gasLimit),
           gasPrice: numberToHex(gasPrice),
           nonce: '0x2',
-          to: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
+          to: '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
           value: '0x0',
         },
       })

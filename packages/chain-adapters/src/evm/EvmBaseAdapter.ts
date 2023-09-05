@@ -12,6 +12,7 @@ import {
   supportsBSC,
   supportsETH,
   supportsGnosis,
+  supportsHighbury,
   supportsOptimism,
   supportsPolygon,
 } from '@shapeshiftoss/hdwallet-core'
@@ -46,7 +47,7 @@ import type {
 import { ValidAddressResultType } from '../types'
 import { getAssetNamespace, toAddressNList, toRootDerivationPath } from '../utils'
 import { bnOrZero } from '../utils/bignumber'
-import type { avalanche, bnbsmartchain, ethereum, gnosis, optimism, polygon } from '.'
+import type { avalanche, bnbsmartchain, ethereum, gnosis, highbury, optimism, polygon } from '.'
 import type {
   BuildCustomApiTxInput,
   BuildCustomTxInput,
@@ -63,6 +64,7 @@ export const evmChainIds = [
   KnownChainIds.BnbSmartChainMainnet,
   KnownChainIds.PolygonMainnet,
   KnownChainIds.GnosisMainnet,
+  KnownChainIds.HighburyMainnet,
 ] as const
 
 export type EvmChainId = typeof evmChainIds[number]
@@ -73,6 +75,7 @@ export type EvmChainAdapter =
   | optimism.ChainAdapter
   | bnbsmartchain.ChainAdapter
   | polygon.ChainAdapter
+  | highbury.ChainAdapter
   | gnosis.ChainAdapter
 
 export const isEvmChainId = (
@@ -159,6 +162,8 @@ export abstract class EvmBaseAdapter<T extends EvmChainId> implements IChainAdap
         return supportsPolygon(wallet)
       case Number(fromChainId(KnownChainIds.GnosisMainnet).chainReference):
         return supportsGnosis(wallet)
+      case Number(fromChainId(KnownChainIds.HighburyMainnet).chainReference):
+        return supportsHighbury(wallet)
       default:
         return false
     }
@@ -202,6 +207,11 @@ export abstract class EvmBaseAdapter<T extends EvmChainId> implements IChainAdap
         symbol: 'xDAI',
         explorer: 'https://gnosisscan.io/',
       },
+      [KnownChainIds.HighburyMainnet]: {
+        name: 'FURY',
+        symbol: 'FURY',
+        explorer: 'https://explorer.furya.xyz/',
+      },
       [KnownChainIds.EthereumMainnet]: {
         name: 'Ethereum',
         symbol: 'ETH',
@@ -229,7 +239,7 @@ export abstract class EvmBaseAdapter<T extends EvmChainId> implements IChainAdap
 
   async buildSendApiTransaction(input: BuildSendApiTxInput<T>): Promise<SignTx<T>> {
     try {
-      const { to, from, value, accountNumber, chainSpecific, sendMax = false } = input
+      const { to, from, value, accountNumber, chainSpecific, sendMax = false, customNonce } = input
       const { data, contractAddress, gasPrice, gasLimit, maxFeePerGas, maxPriorityFeePerGas } =
         chainSpecific
 
@@ -272,13 +282,18 @@ export abstract class EvmBaseAdapter<T extends EvmChainId> implements IChainAdap
         return { gasPrice: numberToHex(gasPrice!) }
       })()
 
+      const nonce =
+        customNonce !== undefined
+          ? numberToHex(customNonce)
+          : numberToHex(account.chainSpecific.nonce)
+
       const txToSign = {
         addressNList: toAddressNList(this.getBIP44Params({ accountNumber })),
         value: numberToHex(isTokenSend ? '0' : _value),
         to: isTokenSend ? contractAddress : to,
         chainId: Number(fromChainId(this.chainId).chainReference),
         data: data || (await getErc20Data(to, _value, contractAddress)),
-        nonce: numberToHex(account.chainSpecific.nonce),
+        nonce,
         gasLimit: numberToHex(gasLimit),
         ...fees,
       } as SignTx<T>

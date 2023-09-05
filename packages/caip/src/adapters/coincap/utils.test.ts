@@ -1,6 +1,6 @@
 import realFs from 'fs'
 
-import { bitcoinAssetMap, cosmosAssetMap, osmosisAssetMap } from '../../utils'
+import { bitcoinAssetMap, cosmosAssetMap } from '../../utils'
 import { parseData, parseEthData, writeFiles } from './utils'
 
 const makeEthMockCoincapResponse = () => ({
@@ -18,11 +18,11 @@ const makeEthMockCoincapResponse = () => ({
   explorer: 'https://etherscan.io/',
 })
 
-const makeFoxMockCoincapResponse = () => ({
-  id: 'fox-token',
+const makeFuryMockCoincapResponse = () => ({
+  id: 'fury-token',
   rank: '396',
-  symbol: 'FOX',
-  name: 'FOX Token',
+  symbol: 'FURY',
+  name: 'FURY Token',
   supply: '117022448.6044180000000000',
   maxSupply: '1000001337.0000000000000000',
   marketCapUsd: '76108238.1995641297877127',
@@ -30,7 +30,7 @@ const makeFoxMockCoincapResponse = () => ({
   priceUsd: '0.6503729763580659',
   changePercent24Hr: '-3.1066427856364231',
   vwap24Hr: '0.6546275575306273',
-  explorer: 'https://etherscan.io/token/0xc770eefad204b5180df6a14ee197d99d808ee52d',
+  explorer: 'https://etherscan.io/token/0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
 })
 
 const makeBtcMockCoincapResponse = () => ({
@@ -78,21 +78,6 @@ const makeCosmosMockCoincapResponse = () => ({
   explorer: 'https://www.mintscan.io/cosmos',
 })
 
-const makeOsmosisMockCoincapResponse = () => ({
-  id: 'osmosis',
-  rank: '730',
-  symbol: 'OSMO',
-  name: 'Osmosis',
-  supply: '229862431.0000000000000000',
-  maxSupply: '1000000000.0000000000000000',
-  marketCapUsd: '1957320025.1314825668859843',
-  volumeUsd24Hr: '15685.4558405572962647',
-  priceUsd: '8.5151802172121053',
-  changePercent24Hr: '0.5555705025303916',
-  vwap24Hr: '8.7723272775832324',
-  explorer: 'https://www.mintscan.io/osmosis',
-})
-
 jest.mock('fs', () => ({
   promises: {
     writeFile: jest.fn(() => undefined),
@@ -102,10 +87,10 @@ jest.mock('fs', () => ({
 describe('adapters:coincap:utils', () => {
   describe('parseEthData', () => {
     it('can parse eth data', () => {
-      const result = parseEthData([makeEthMockCoincapResponse(), makeFoxMockCoincapResponse()])
+      const result = parseEthData([makeEthMockCoincapResponse(), makeFuryMockCoincapResponse()])
       const expected = {
         'eip155:1/slip44:60': 'ethereum',
-        'eip155:1/erc20:0xc770eefad204b5180df6a14ee197d99d808ee52d': 'fox-token',
+        'eip155:1/erc20:0x595f0ce3e840fdcc0676cf522477b6b46a6bc734': 'fury-token',
       }
       expect(result).toEqual(expected)
     })
@@ -121,24 +106,15 @@ describe('adapters:coincap:utils', () => {
       const expected = { 'cosmos:cosmoshub-4/slip44:118': 'cosmos' }
       expect(result).toEqual(expected)
     })
-
-    it('can parse osmosis data', () => {
-      const result = osmosisAssetMap
-      const expected = {
-        'cosmos:osmosis-1/slip44:118': 'osmosis',
-      }
-      expect(result).toEqual(expected)
-    })
   })
 
   describe('parseData', () => {
     it('can parse all data', () => {
       const result = parseData([
         makeEthMockCoincapResponse(),
-        makeFoxMockCoincapResponse(),
+        makeFuryMockCoincapResponse(),
         makeBtcMockCoincapResponse(),
         makeCosmosMockCoincapResponse(),
-        makeOsmosisMockCoincapResponse(),
         makeThorchainMockCoincapResponse(),
       ])
       const expected = {
@@ -157,15 +133,12 @@ describe('adapters:coincap:utils', () => {
         'cosmos:cosmoshub-4': {
           'cosmos:cosmoshub-4/slip44:118': 'cosmos',
         },
-        'cosmos:osmosis-1': {
-          'cosmos:osmosis-1/slip44:118': 'osmosis',
-        },
         'cosmos:thorchain-mainnet-v1': {
           'cosmos:thorchain-mainnet-v1/slip44:931': 'thorchain',
         },
         'eip155:1': {
           'eip155:1/slip44:60': 'ethereum',
-          'eip155:1/erc20:0xc770eefad204b5180df6a14ee197d99d808ee52d': 'fox-token',
+          'eip155:1/erc20:0x595f0ce3e840fdcc0676cf522477b6b46a6bc734': 'fury-token',
         },
       }
       expect(result).toEqual(expected)
@@ -180,7 +153,7 @@ describe('adapters:coincap:utils', () => {
           assetIdDef: 'efferium',
         },
         bar: {
-          assetIdGhi: 'fox',
+          assetIdGhi: 'fury',
           assetIdJkl: 'shib',
         },
       }

@@ -5,6 +5,7 @@ import {
   bscChainId,
   ethChainId,
   gnosisChainId,
+  highburyChainId,
   optimismChainId,
   polygonChainId,
   toAssetId,
@@ -22,6 +23,7 @@ export enum SupportedZapperNetwork {
   // Unsupported networks - uncomment as we implement them
   Polygon = 'polygon', // Technically supported by Zapper as far as Apps/Wallet goes, but no NFTs returned
   Gnosis = 'gnosis',
+  Highbury = 'highbury',
   // Fantom = 'fantom',
   // Artbitrum = 'arbitrum',
   // Celo = 'celo',
@@ -41,6 +43,7 @@ export enum SupportedZapperNetworkIncludeUnsupported {
   Optimism = 'optimism',
   Polygon = 'polygon', // Technically supported by Zapper as far as Apps/Wallet goes, but no NFTs returned
   Gnosis = 'gnosis',
+  Highbury = 'highbury',
   Fantom = 'fantom',
   Artbitrum = 'arbitrum',
   Celo = 'celo',
@@ -59,6 +62,7 @@ export const ZAPPER_NETWORKS_TO_CHAIN_ID_MAP: Record<SupportedZapperNetwork, Cha
   [SupportedZapperNetwork.Optimism]: optimismChainId,
   [SupportedZapperNetwork.Polygon]: polygonChainId,
   [SupportedZapperNetwork.Gnosis]: gnosisChainId,
+  [SupportedZapperNetwork.Highbury]: highburyChainId,
 } as const
 
 export const CHAIN_ID_TO_ZAPPER_NETWORK_MAP = invert(ZAPPER_NETWORKS_TO_CHAIN_ID_MAP) as Partial<

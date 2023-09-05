@@ -5,10 +5,12 @@ import {
   bscChainId,
   ethAssetId,
   ethChainId,
-  foxAssetId,
-  foxOnGnosisAssetId,
   gnosisAssetId,
   gnosisChainId,
+  highburyAssetId,
+  highburyChainId,
+  jinxAssetId,
+  jinxOnGnosisAssetId,
   optimismAssetId,
   optimismChainId,
   thorchainAssetId,
@@ -42,30 +44,30 @@ export const WETH: Asset = {
   symbol: 'WETH',
 }
 
-export const FOX_MAINNET: Asset = {
-  assetId: foxAssetId,
+export const JINX_MAINNET: Asset = {
+  assetId: jinxAssetId,
   chainId: ethChainId,
-  name: 'FOX',
+  name: 'JINX',
   precision: 18,
   color: '#FFFFFF',
-  icon: 'https://assets.coincap.io/assets/icons/fox@2x.png',
+  icon: 'https://assets.coincap.io/assets/icons/jinx@2x.png',
   explorer: 'https://etherscan.io',
   explorerTxLink: 'https://etherscan.io/tx/',
   explorerAddressLink: 'https://etherscan.io/address/',
-  symbol: 'FOX',
+  symbol: 'JINX',
 }
 
-export const FOX_GNOSIS: Asset = {
-  assetId: foxOnGnosisAssetId,
+export const JINX_GNOSIS: Asset = {
+  assetId: jinxOnGnosisAssetId,
   chainId: gnosisChainId,
-  name: 'FOX',
+  name: 'JINX',
   precision: 18,
   color: '#FFFFFF',
-  icon: 'https://assets.coincap.io/assets/icons/fox@2x.png',
+  icon: 'https://assets.coincap.io/assets/icons/jinx@2x.png',
   explorer: 'https://gnosisscan.io/',
   explorerAddressLink: 'https://gnosisscan.io/address/',
   explorerTxLink: 'https://gnosisscan.io/tx/',
-  symbol: 'FOX',
+  symbol: 'JINX',
 }
 
 export const WBTC: Asset = {
@@ -190,6 +192,21 @@ export const XDAI: Asset = {
   explorer: 'https://gnosisscan.io/',
   explorerAddressLink: 'https://gnosisscan.io/address/',
   explorerTxLink: 'https://gnosisscan.io/tx/',
+}
+
+export const FURY: Asset = {
+  assetId: highburyAssetId,
+  chainId: highburyChainId,
+  name: 'FURY',
+  networkName: 'Highbury Chain',
+  symbol: 'FURY',
+  precision: 18,
+  color: '#33765c',
+  icon: 'https://assets.coingecko.com/coins/images/27079/large/fury.png?1661761670',
+  networkIcon: 'https://assets.coingecko.com/coins/images/27079/large/fury.png?1661761670',
+  explorer: 'https://explorer.furya.io/',
+  explorerAddressLink: 'https://explorer.furya.io/address/',
+  explorerTxLink: 'https://explorer.furya.io/tx/',
 }
 
 export const RUNE: Asset = {

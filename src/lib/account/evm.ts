@@ -6,6 +6,7 @@ import {
   supportsBSC,
   supportsETH,
   supportsGnosis,
+  supportsHighbury,
   supportsOptimism,
   supportsPolygon,
 } from '@shapeshiftoss/hdwallet-core'
@@ -44,6 +45,10 @@ export const deriveEvmAccountIdsAndMetadata: DeriveAccountIdsAndMetadata = async
 
       if (chainReference === CHAIN_REFERENCE.PolygonMainnet) {
         if (!supportsPolygon(wallet)) continue
+      }
+
+      if (chainReference === CHAIN_REFERENCE.HighburyMainnet) {
+        if (!supportsHighbury(wallet)) continue
       }
 
       if (chainReference === CHAIN_REFERENCE.GnosisMainnet) {

@@ -49,6 +49,7 @@ export const getTokenStandardFromChainId = (chainId: ChainId): AssetNamespace | 
     case KnownChainIds.EthereumMainnet:
     case KnownChainIds.AvalancheMainnet:
     case KnownChainIds.PolygonMainnet:
+    case KnownChainIds.HighburyMainnet:
     case KnownChainIds.GnosisMainnet:
       return ASSET_NAMESPACE.erc20
     case KnownChainIds.BnbSmartChainMainnet:

@@ -5,6 +5,7 @@ import {
   ethAssetId,
   fromAssetId,
   gnosisAssetId,
+  highburyAssetId,
   optimismAssetId,
   polygonAssetId,
 } from '@shapeshiftoss/caip'
@@ -16,6 +17,7 @@ import {
   DAO_TREASURY_BSC,
   DAO_TREASURY_ETHEREUM_MAINNET,
   DAO_TREASURY_GNOSIS,
+  DAO_TREASURY_HIGHBURY,
   DAO_TREASURY_OPTIMISM,
   DAO_TREASURY_POLYGON,
 } from 'constants/treasury'
@@ -43,6 +45,8 @@ export const isNativeEvmAsset = (assetId: AssetId): boolean => {
       return assetId === bscAssetId
     case KnownChainIds.PolygonMainnet:
       return assetId === polygonAssetId
+    case KnownChainIds.HighburyMainnet:
+      return assetId === highburyAssetId
     case KnownChainIds.GnosisMainnet:
       return assetId === gnosisAssetId
     default:
@@ -82,6 +86,7 @@ const DAO_TREASURY_BY_CHAIN_ID: Record<EvmChainId, string> = {
   [KnownChainIds.OptimismMainnet]: DAO_TREASURY_OPTIMISM,
   [KnownChainIds.AvalancheMainnet]: DAO_TREASURY_AVALANCHE,
   [KnownChainIds.PolygonMainnet]: DAO_TREASURY_POLYGON,
+  [KnownChainIds.HighburyMainnet]: DAO_TREASURY_HIGHBURY,
   [KnownChainIds.GnosisMainnet]: DAO_TREASURY_GNOSIS,
   [KnownChainIds.BnbSmartChainMainnet]: DAO_TREASURY_BSC,
 }

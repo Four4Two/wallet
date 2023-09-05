@@ -7,18 +7,18 @@ export const uniV2Token: Token = {
   symbol: 'UNI-V2',
 }
 
-export const foxToken: Token = {
-  contract: '0xc770EEfAd204B5180dF6a14Ee197D99d808ee52d',
+export const furyToken: Token = {
+  contract: '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
   decimals: 18,
-  name: 'FOX',
-  symbol: 'FOX',
+  name: 'FURY',
+  symbol: 'FURY',
 }
 
-export const foxyToken: Token = {
+export const jinxToken: Token = {
   contract: '0xDc49108ce5C57bc3408c3A5E95F3d864eC386Ed3',
   decimals: 18,
-  name: 'FOX Yieldy',
-  symbol: 'FOXy',
+  name: 'FURY Yieldy',
+  symbol: 'FURYy',
 }
 
 export const usdcToken: Token = {

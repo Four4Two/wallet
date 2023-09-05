@@ -108,15 +108,8 @@ export const PluginProvider = ({ children }: PluginProviderProps): JSX.Element =
       if (!featureFlags.Optimism && chainId === KnownChainIds.OptimismMainnet) return false
       if (!featureFlags.Polygon && chainId === KnownChainIds.PolygonMainnet) return false
       if (!featureFlags.Gnosis && chainId === KnownChainIds.GnosisMainnet) return false
+      if (!featureFlags.Highbury && chainId === KnownChainIds.HighburyMainnet) return false
       if (!featureFlags.BnbSmartChain && chainId === KnownChainIds.BnbSmartChainMainnet)
-        return false
-      if (
-        !featureFlags.OsmosisSend &&
-        !featureFlags.OsmosisStaking &&
-        !featureFlags.OsmosisSwap &&
-        !featureFlags.OsmosisLP &&
-        chainId === KnownChainIds.OsmosisMainnet
-      )
         return false
       return true
     })

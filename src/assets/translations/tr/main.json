@@ -135,7 +135,7 @@
     "disclaimer": "*Ayrıca kriptonuzu banka hesabınıza doğrudan nakit olarak satabilirsiniz.",
     "cta": {
       "title": {
-        "first": "Ayrıca ShapeShift'i en iyi cüzdanların tümü ile takas yapmak, kazanç elde etmek ve",
+        "first": "Ayrıca Blackfury'i en iyi cüzdanların tümü ile takas yapmak, kazanç elde etmek ve",
         "second": "Kripto paranızı %{chainCount} farklı ağda takip edebilirsiniz"
       }
     },
@@ -222,11 +222,11 @@
     "notSupported": "%{asset}, %{wallet} tarafından desteklenmiyor"
   },
   "connectWalletPage": {
-    "shapeshift": "ShapeShift",
+    "shapeshift": "Blackfury",
     "exploreThe": "DeFi Dünyası'nı",
     "defiUniverse": "Keşfedin",
     "body": "%100 Ücretsiz. Açık kaynak. Topluluk Sahibi. Çevrimdışı. Özel.",
-    "body2": "Yeni ShapeShift'e hoş geldiniz. %100 Ücretsiz. Açık kaynak. Topluluk Sahibi. Çevrimdışı. Özel.",
+    "body2": "Yeni Blackfury'e hoş geldiniz. %100 Ücretsiz. Açık kaynak. Topluluk Sahibi. Çevrimdışı. Özel.",
     "header": "Başlamak için lütfen bir cüzdan bağlayın",
     "cta": "Cüzdanı Bağla",
     "viewADemo": "Demo Görüntüle"
@@ -281,22 +281,22 @@
         "emptyWithdraws": "Bekleyen staking istekleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
       },
-      "foxyOverview": {
-        "header": "FOXy'yi kazanmak için FOX yatırın",
-        "body": "FOXy, FOX fiyatına sabitlenmiş bir yeniden değerleme tokenidir. Stake edilmiş FOX, mümkün olan en iyi getiriyi elde etmek için farklı DeFi protokollerinde çalışır.",
+      "jinxOverview": {
+        "header": "FURYy'yi kazanmak için FURY yatırın",
+        "body": "FURYy, FURY fiyatına sabitlenmiş bir yeniden değerleme tokenidir. Stake edilmiş FURY, mümkün olan en iyi getiriyi elde etmek için farklı DeFi protokollerinde çalışır.",
         "rewards": "Kazandığınız ödüller otomatik olarak tahakkuk edecektir.",
-        "cta": "Şimdi FOX Yatırın",
-        "foxyBalance": "FOXy Bakiyesi",
+        "cta": "Şimdi FURY Yatırın",
+        "jinxBalance": "FURYy Bakiyesi",
         "withdrawals": "Para Çekme",
         "emptyWithdraws": "Bekleyen veya etkin para çekme işlemleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
       },
-      "foxFarmingOverview": {
-        "header": "Kazanmak için ETH-FOX LP jetonlarını %{opportunity}'e yatırın",
-        "body": "Bonus FOX ödülleri kazanmak için likidite jetonlarınızı onaylayın ve stake edin.",
+      "furyFarmingOverview": {
+        "header": "Kazanmak için ETH-FURY LP jetonlarını %{opportunity}'e yatırın",
+        "body": "Bonus FURY ödülleri kazanmak için likidite jetonlarınızı onaylayın ve stake edin.",
         "rewards": "Kazandığınız ödüller otomatik olarak tahakkuk edecektir.",
-        "cta": "Şimdi ETH-FOX LP jetonlarını Yatırın",
-        "foxFarmingBalance": "ETH-FOX LP token Bakiyesi",
+        "cta": "Şimdi ETH-FURY LP jetonlarını Yatırın",
+        "furyFarmingBalance": "ETH-FURY LP token Bakiyesi",
         "withdrawals": "Para çekme",
         "emptyWithdraws": "Bekleyen veya etkin para çekme işlemleri burada gösterilir.",
         "availableDate": "kullanılabilir %{date}"
@@ -354,7 +354,7 @@
     },
     "memoNote": {
       "title": "Lütfen işlem notunu düzenlemeyin",
-      "body": "ShapeShift'ten kaynaklanan işlemler, DAO'nun desteklenmesine yardımcı olur."
+      "body": "Blackfury'ten kaynaklanan işlemler, DAO'nun desteklenmesine yardımcı olur."
     },
     "amountToStake": "Stake Miktarı",
     "amountToUnstake": "Kaldırılacak Stake Miktarı",
@@ -407,7 +407,7 @@
     "earnBalance": "Kazanç Bakiyesi",
     "rewardsBalance": "Ödül Bakiyesi",
     "earnBody": "Varlıklarınızı stake ederek veya bir DeFi stratejisine yatırarak pasif gelir elde edin.",
-    "clickHereToEarn": "ETH-FOX likidite havuzu belirteçlerinizi biriktirerek %{apr} APR* kazanmak için burayı tıklayın",
+    "clickHereToEarn": "ETH-FURY likidite havuzu belirteçlerinizi biriktirerek %{apr} APR* kazanmak için burayı tıklayın",
     "overview": "Genel Bakış",
     "myPositions": "Pozisyonlarım",
     "myPositionsBody": "Aktif pozisyonlarınız burada görünecektir.",
@@ -502,7 +502,7 @@
     "overview": "Genel Bakış",
     "transactions": "İşlemler",
     "tradeHistory": "Takas Geçmişi",
-    "foxToken": "FOX Fırsatları",
+    "furyToken": "FURY Fırsatları",
     "dApps": "dApps",
     "featureFlags": "Özellik Bayrakları",
     "demoMode": "Deneme Modu",
@@ -515,8 +515,8 @@
     "buyCrypto": "Kripto Al/Sat",
     "buyCryptoShort": "Al/Sat",
     "arkeo": "Arkeo Airdrop",
-    "foxMissions": "FOX Görevleri",
-    "foxMissionsShort": "Görevler"
+    "furyMissions": "FURY Görevleri",
+    "furyMissionsShort": "Görevler"
   },
   "transactionRow": {
     "send": "Gönderilen",
@@ -567,7 +567,7 @@
       "thor": {
         "transferOut": "Dışa Aktar"
       },
-      "foxy": {
+      "jinx": {
         "stake": "Stake Et",
         "unstake": "Stake Kaldır",
         "instantUnstake": "Stake'i Anında Geri Al",
@@ -654,7 +654,7 @@
     "youGet": "Al",
     "tradeTo": "Buraya Takasla",
     "minerFee": "Madenci Ücreti",
-    "donation": "ShapeShift Bağışı",
+    "donation": "Blackfury Bağışı",
     "protocolFee": "Protokol Ücreti",
     "protocol": "Protokol",
     "tradeFeeSource": "%{tradeFeeSource} Ücret",
@@ -684,12 +684,12 @@
     "tooltip": {
       "rate": "Bu, bu işlem çifti için beklenen orandır.",
       "noRateAvailable": "Bunun nedeni genellikle ticaret çiftinde çok sınırlı veya hiç likidite olmamasıdır.",
-      "minerFee": "Bu, blok zincirindeki işlemi işlemek için alınan ücrettir, ShapeShift tarafından alınan bir ücret değildir.",
-      "donation": "ShapeShift'i desteklemeye yardımcı olun ve bizi çalışır durumda tutun.",
+      "minerFee": "Bu, blok zincirindeki işlemi işlemek için alınan ücrettir, Blackfury tarafından alınan bir ücret değildir.",
+      "donation": "Blackfury'i desteklemeye yardımcı olun ve bizi çalışır durumda tutun.",
       "protocol": "Bu, ticaretinizin yönlendirildiği protokoldür.",
       "protocolLifi": "Bu, ticaretinizin yönlendirildiği protokoldür. LI.FI, fiyat, güvenlik ve hızın en iyi genel kombinasyonu için başlık altında bir dizi aracı işlem yürütür.",
-      "protocolFee": "Bu, bu işlemi gerçekleştirmek için seçilen protokol tarafından alınan ücrettir, ShapeShift tarafından alınan bir ücret değildir.",
-      "shapeshiftFee": "ShapeShift, işlemlerde ücret eklemiyor 🎉",
+      "protocolFee": "Bu, bu işlemi gerçekleştirmek için seçilen protokol tarafından alınan ücrettir, Blackfury tarafından alınan bir ücret değildir.",
+      "shapeshiftFee": "Blackfury, işlemlerde ücret eklemiyor 🎉",
       "manualReceiveAddress": "Bu, fonunuzu çekeceğiniz adrestir. Manuel olarak girilmiştir, lütfen doğru olduğundan emin olun."
     },
     "rates": {
@@ -872,7 +872,7 @@
         "info": {
           "title": "Gizli Kurtarma İfadeniz",
           "description": "Bu 12 kelimeyi bir yere yazın ve çevrimdışı olarak güvenli bir şekilde saklayın. Bu 12 kelimelik cümle, cüzdan özel anahtarlarınızı kurtarmak için kullanılır.",
-          "warning": "Not: Gizli Kurtarma İfadenizi kaybederseniz, ShapeShift cüzdanınızı kurtarmanıza yardımcı olamaz ve paranız sonsuza kadar kaybolur."
+          "warning": "Not: Gizli Kurtarma İfadenizi kaybederseniz, Blackfury cüzdanınızı kurtarmanıza yardımcı olamaz ve paranız sonsuza kadar kaybolur."
         },
         "success": {
           "title": "Başarılı",
@@ -1003,7 +1003,7 @@
     },
     "approve": {
       "header": "%{spenderName}'ın %{asset} öğenizi kullanmasına izin verin",
-      "shapeshiftRouterName": "ShapeShift DAO Yönlendirici",
+      "shapeshiftRouterName": "Blackfury DAO Yönlendirici",
       "body": "%{asset} kullanımınız için izniniz gerekiyor",
       "learnMore": "Bunu neden yapmam gerekiyor?",
       "depositFee": "Yatırmak için ayrı bir gaz ücreti gerekecektir.",
@@ -1101,7 +1101,7 @@
     "mobileWelcome": {
       "success": {
         "header": "Cüzdanınız içe aktarıldı!",
-        "body": "Yeni ShapeShift Uygulamasına hoş geldiniz.",
+        "body": "Yeni Blackfury Uygulamasına hoş geldiniz.",
         "primaryCta": "Devam et"
       },
       "notice": {
@@ -1247,7 +1247,7 @@
       },
       "redirect": {
         "header": "MetaMask Uygulamasında Aç",
-        "body": "ShapeShift panosunu MetaMask'ta açmak için tıklayın",
+        "body": "Blackfury panosunu MetaMask'ta açmak için tıklayın",
         "button": "Aç"
       }
     },
@@ -1299,7 +1299,7 @@
       },
       "redirect": {
         "header": "XDEFI Uygulamasında aç",
-        "body": "XDEFI'de ShapeShift kontrol panelini açmak için tıklayın",
+        "body": "XDEFI'de Blackfury kontrol panelini açmak için tıklayın",
         "button": "Aç"
       }
     },
@@ -1326,7 +1326,7 @@
       "password": {
         "header": "Yeni bir şifre oluştur",
         "body": "İçe aktarılan cüzdanınızı şifrelemek için güçlü bir parola girin. Cüzdanınıza bu şekilde erişeceksiniz.",
-        "warning": "Not: Parolanızı unutursanız, ShapeShift parolanızı kurtarmanıza yardımcı olamaz.",
+        "warning": "Not: Parolanızı unutursanız, Blackfury parolanızı kurtarmanıza yardımcı olamaz.",
         "button": "Sonraki",
         "connect": "Başka bir cüzdana bağlan"
       },
@@ -1338,8 +1338,8 @@
         "showWords": "Kelimeleri Göster"
       },
       "start": {
-        "header": "ShapeShift Cüzdanı",
-        "body": "Birden fazla ShapeShift cüzdanınız olabilir. Bir cüzdan yükleyebilir, bir Gizli Kurtarma ifadesinden bir cüzdan ekleyebilir veya yeni bir cüzdan oluşturabilirsiniz.",
+        "header": "Blackfury Cüzdanı",
+        "body": "Birden fazla Blackfury cüzdanınız olabilir. Bir cüzdan yükleyebilir, bir Gizli Kurtarma ifadesinden bir cüzdan ekleyebilir veya yeni bir cüzdan oluşturabilirsiniz.",
         "import": "Bir cüzdanı içe aktar",
         "create": "Yeni bir cüzdan oluştur",
         "load": "Kayıtlı cüzdanlar"
@@ -1389,15 +1389,15 @@
         "confirmDelete": "Bu cüzdanın takma adını silmek istediğinizden emin misiniz?"
       },
       "legacy": {
-        "deprecatedWarning": "ShapeShift Oturum Açma Kullanımdan Kaldırılıyor",
+        "deprecatedWarning": "Blackfury Oturum Açma Kullanımdan Kaldırılıyor",
         "learnMore": "Daha fazla bilgi edin",
         "alreadySavedConfirm": "Gizli Kurtarma İfademin zaten güvenli bir şekilde yedeklendiğini onaylıyorum.",
-        "mobileWalletTitle": "ShapeShift Mobil Cüzdan",
-        "importInformations": "ShapeShift Mobil Cüzdanınızı kullanmaya devam etmek için onu içe aktarmanız gerekir.",
+        "mobileWalletTitle": "Blackfury Mobil Cüzdan",
+        "importInformations": "Blackfury Mobil Cüzdanınızı kullanmaya devam etmek için onu içe aktarmanız gerekir.",
         "importWallet": "Cüzdanı İçe Aktar",
-        "haveMobileWallet": "ShapeShift Mobil Cüzdanınız mı var?",
-        "loginWithAccount": "ShapeShift Hesabı ile Giriş Yapın",
-        "loginInformations": "ShapeShift Mobil Uygulamanıza giriş yapmak için kullandığınız e-posta adresinizi ve şifrenizi girin.",
+        "haveMobileWallet": "Blackfury Mobil Cüzdanınız mı var?",
+        "loginWithAccount": "Blackfury Hesabı ile Giriş Yapın",
+        "loginInformations": "Blackfury Mobil Uygulamanıza giriş yapmak için kullandığınız e-posta adresinizi ve şifrenizi girin.",
         "loginSuccess": "Başarıyla Giriş Yapıldı",
         "emailAddress": "E-posta Adresi",
         "password": "Şifre",
@@ -1407,7 +1407,7 @@
         "captchaRequired": "Güvenlik kodu gerekli",
         "tooManyAttempts": "Çok fazla denendi. Lütfen daha sonra tekrar deneyiniz.",
         "invalidLogin": "Geçersiz giriş",
-        "noWallet": "Oturum açmanız için bir ShapeShift cüzdanı bulunamadı. Bu mesajın hatalı olduğunu düşünüyorsanız, lütfen ShapeShift desteği ile iletişime geçin.",
+        "noWallet": "Oturum açmanız için bir Blackfury cüzdanı bulunamadı. Bu mesajın hatalı olduğunu düşünüyorsanız, lütfen Blackfury desteği ile iletişime geçin.",
         "decryptionError": "Cüzdanınızın şifresi çözülürken bir sorun oluştu.",
         "twoFactorAuthentication": "İki Faktörlü Kimlik Doğrulama",
         "twoFactorPlaceholder": "6 haneli kod",
@@ -1417,9 +1417,9 @@
       },
       "onboarding": {
         "skip": "Geç",
-        "shapeshiftWallet": "ShapeShift Cüzdanı",
+        "shapeshiftWallet": "Blackfury Cüzdanı",
         "selfCustody": {
-          "title": "ShapeShift Cüzdanınız kişisel velayettir",
+          "title": "Blackfury Cüzdanınız kişisel velayettir",
           "subTitle": "Anahtarlar sizde ve ona erişebilecek tek kişi sizsiniz.",
           "body": "Kişisel velayet cüzdanı, ona sahip olduğunuz ve paranıza yalnızca sizin erişebileceğiniz anlamına gelir. Gizli kurtarma ifadeniz, ona erişmenin anahtarıdır. Paranıza erişmenizi kimse engelleyemez.",
           "cta": "Sonraki"
@@ -1427,12 +1427,12 @@
         "multiChain": {
           "title": "Aynı anda birden çok zincir desteklenir",
           "subTitle": "Cüzdandaki zincirleri asla değiştirmenize gerek yoktur, her zincirle sorunsuz bir şekilde çalışır.",
-          "body": "ShapeShift'e yeni bir zincir eklendiğinde, Cüzdanınız bunu otomatik olarak destekleyecektir.",
+          "body": "Blackfury'e yeni bir zincir eklendiğinde, Cüzdanınız bunu otomatik olarak destekleyecektir.",
           "cta": "Sonraki"
         },
         "easyToUse": {
           "title": "Kullanımı kolay!",
-          "subTitle": "ShapeShift Cüzdan ile şunları yapabilirsiniz:",
+          "subTitle": "Blackfury Cüzdan ile şunları yapabilirsiniz:",
           "trackBalance": "Bakiyenizi takip edin",
           "sendReceive": "Kripto gönder/al",
           "buyCrypto": "Kripto Satın Al",
@@ -1445,7 +1445,7 @@
     },
     "selectModal": {
       "header": "Bir Cüzdan Bağlayın",
-      "body": "Bir cüzdan bağlayarak, ShapeShift'in Hizmet Şartlarını kabul etmiş ve ShapeShift sorumluluk reddini okuyup anladığınızı kabul etmiş olursunuz.",
+      "body": "Bir cüzdan bağlayarak, Blackfury'in Hizmet Şartlarını kabul etmiş ve Blackfury sorumluluk reddini okuyup anladığınızı kabul etmiş olursunuz.",
       "footer": "Cüzdanınız yok mu?",
       "create": "Bir tane yaratın"
     },
@@ -1575,7 +1575,7 @@
     },
     "downloadCSV": "CSV'yi indir",
     "csv": {
-      "fileName": "ShapeShift İşlem Geçmişi",
+      "fileName": "Blackfury İşlem Geçmişi",
       "txid": "TX ID",
       "type": "TX type",
       "timestamp": "Zaman Damgası",
@@ -1614,57 +1614,57 @@
     "transfers": "Transferler"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Coinbase'de %{assetSymbol} satın alın",
-      "totalFoxValue": "Toplam FOX Değeri",
-      "foxToken": "ShapeShift %{assetSymbol} Jetonu",
-      "foxDescription": "2019'dan bu yana, ShapeShift FOX Token'ımız, kullanıcılara sürekli genişleyen bir fayda ve avantajlar dünyası sunuyor. Bugün, ERC-20 yönetişim belirtecimiz, oylarınızla ShapeShift'in geleceğini etkilemenizi sağlamakla kalmıyor, aynı zamanda sürekli genişleyen bir yatırım fırsatları evrenine de sahipsiniz. Burada FOX varlıklarınıza yatırım yapın, izleyin ve yönetin.",
+      "totalFuryValue": "Toplam FURY Değeri",
+      "furyToken": "Blackfury %{assetSymbol} Jetonu",
+      "furyDescription": "2019'dan bu yana, Blackfury FURY Token'ımız, kullanıcılara sürekli genişleyen bir fayda ve avantajlar dünyası sunuyor. Bugün, ERC-20 yönetişim belirtecimiz, oylarınızla Blackfury'in geleceğini etkilemenizi sağlamakla kalmıyor, aynı zamanda sürekli genişleyen bir yatırım fırsatları evrenine de sahipsiniz. Burada FURY varlıklarınıza yatırım yapın, izleyin ve yönetin.",
       "getAsset": "%{assetSymbol} alın",
       "trade": "Takas",
       "receive": "Al",
       "mainStakingTitle": "%{assetSymbol} Jeton Stake Etme",
-      "mainStakingDescription": "FOX ödüllerini kazanmak için FOX'unuzu tek taraflı staking sözleşmelerinde çalıştırın. (FOX, stake edilirken yönetişimde hala kullanılabilir, ancak bunun dışında staking sırasında sözleşmeye kilitlenir.)",
+      "mainStakingDescription": "FURY ödüllerini kazanmak için FURY'unuzu tek taraflı staking sözleşmelerinde çalıştırın. (FURY, stake edilirken yönetişimde hala kullanılabilir, ancak bunun dışında staking sırasında sözleşmeye kilitlenir.)",
       "tvl": "TVL",
       "currentApy": "Mevcut APY",
       "balance": "Bakiye",
       "getStarted": "Başlayın",
       "manage": "Yönet",
       "currentPrice": "Mevcut Fiyat",
-      "tradingUnavailable": "%{assetSymbol}, ShapeShift'te henüz takas edilemez. ElasticSwap'te %{assetSymbol} ile işlem yapabilirsiniz.",
+      "tradingUnavailable": "%{assetSymbol}, Blackfury'te henüz takas edilemez. ElasticSwap'te %{assetSymbol} ile işlem yapabilirsiniz.",
       "tradeOnElasticSwap": "ElasticSwap'te %{assetSymbol} ile işlem yapın",
       "otherOpportunitiesTitle": {
-        "FOX": "Diğer Fırsatlar",
-        "FOXy": "Fırsatlar"
+        "FURY": "Diğer Fırsatlar",
+        "FURYy": "Fırsatlar"
       },
       "otherOpportunitiesDescription": {
-        "FOX": "Likidite sağlama, verim için çiftçilik yapma, borç verme ve borç alma için birçok fırsatı keşfedin. Daha fazla bilgi edinmek ve FOX'unuzu sizin için çalıştırmaya başlamak üzere ilgili harici siteleri ziyaret etmek için aşağıdaki \"Başlayın\" bağlantılarını tıklayın.",
-        "FOXy": "Sektörün hem getiri hem de kâr ödülleri sunan ilk DAO yeniden temellendirme belirteci olan FOXy'yi hızlı ve kolay bir şekilde satın alın."
+        "FURY": "Likidite sağlama, verim için çiftçilik yapma, borç verme ve borç alma için birçok fırsatı keşfedin. Daha fazla bilgi edinmek ve FURY'unuzu sizin için çalıştırmaya başlamak üzere ilgili harici siteleri ziyaret etmek için aşağıdaki \"Başlayın\" bağlantılarını tıklayın.",
+        "FURYy": "Sektörün hem getiri hem de kâr ödülleri sunan ilk DAO yeniden temellendirme belirteci olan FURYy'yi hızlı ve kolay bir şekilde satın alın."
       },
       "liquidityPools": "Likidite Havuzları",
       "farming": "Çiftçilik",
       "borrowingAndLending": "Borç Alma ve Verme",
       "governanceTitle": "Yönetim",
-      "governanceDescription": "Bir FOX sahibi olarak ShapeShift'in geleceğinde söz sahibi olabilirsiniz. Aşağıda, belirteç sahipleri tarafından oylanan aktif veya yakın zamanda geçen DAO teklifleri bulunmaktadır.",
+      "governanceDescription": "Bir FURY sahibi olarak Blackfury'in geleceğinde söz sahibi olabilirsiniz. Aşağıda, belirteç sahipleri tarafından oylanan aktif veya yakın zamanda geçen DAO teklifleri bulunmaktadır.",
       "seeAllProposals": "Tüm Teklifleri Gör",
       "availableToTradeOn": "Takas Edilebilir",
       "dex": "DEX",
       "centralized": "Merkezileştirilmiş",
       "dappBack": {
-        "title": "✨ FOX ödüllerini ve daha fazlasını alın! ✨",
-        "body": "DappBack'teki görevleri tamamlayarak FOX ödülleri kazanın",
+        "title": "✨ FURY ödüllerini ve daha fazlasını alın! ✨",
+        "body": "DappBack'teki görevleri tamamlayarak FURY ödülleri kazanın",
         "cta": "DappBack'i Başlatın"
       },
       "bondProtocol": {
-        "title": "FOX'u İndirimli Satın Alın!",
-        "body": "BondProtocol ile FOX'u indirimli satın alın",
+        "title": "FURY'u İndirimli Satın Alın!",
+        "body": "BondProtocol ile FURY'u indirimli satın alın",
         "cta": "BondProtocol'ü Başlat"
       }
     },
     "analytics": {
       "optInModal": {
-        "title": "ShapeShift'i iyileştirmemize yardımcı olun",
-        "description": "ShapeShift, kullanıcılarımızın uygulamayla nasıl etkileşime girdiğini daha iyi anlamak için kullanım verilerini toplamak istiyor. Bu veriler, ürünümüzün kullanılabilirliğini ve kullanıcı deneyimini sürekli olarak iyileştirmek için kullanılacaktır.",
-        "actionsSentence": "ShapeShift ...",
+        "title": "Blackfury'i iyileştirmemize yardımcı olun",
+        "description": "Blackfury, kullanıcılarımızın uygulamayla nasıl etkileşime girdiğini daha iyi anlamak için kullanım verilerini toplamak istiyor. Bu veriler, ürünümüzün kullanılabilirliğini ve kullanıcı deneyimini sürekli olarak iyileştirmek için kullanılacaktır.",
+        "actionsSentence": "Blackfury ...",
         "noThanks": "Hayır teşekkürler, beni özel sürüme götür",
         "sendEvents": "Anonimleştirilmiş tıklama ve sayfa görüntüleme etkinlikleri gönderildi",
         "neverCollectPersonalInformations": "Hiçbir zaman anahtarları, adresleri, işlemleri, bakiyeleri veya herhangi bir kişisel bilgiyi toplamaz",
@@ -1675,7 +1675,7 @@
     "walletConnectToDapps": {
       "unsupportedToast": {
         "title": "Desteklenmeyen Zincir",
-        "description": "ShapeShift şu anda WalletConnect ile yalnızca %{supportedChainNames}'i desteklemektedir."
+        "description": "Blackfury şu anda WalletConnect ile yalnızca %{supportedChainNames}'i desteklemektedir."
       },
       "header": {
         "connectDapp": "dApp'e Bağlanın",
@@ -1795,7 +1795,7 @@
       "usdcAddress": "Yat USDC adresi",
       "ethAddress": "Yat ETH adresi",
       "noAddressFound": "%{symbol} adresi bulunamadı",
-      "viewInApp": "ShapeShift Mobil Uygulamasında Görüntüle"
+      "viewInApp": "Blackfury Mobil Uygulamasında Görüntüle"
     }
   },
   "gasInput": {
@@ -1916,7 +1916,7 @@
     },
     "whoQualifies": {
       "title": "Arkeo Airdrop'a kimler hak kazanır?",
-      "body": "ShapeShift dApp'i kullanarak airdrop'a katılmaya hak kazanmanın birkaç yolu vardır. Anlık görüntü yayınlanıyor, kalifiye olmak için hala zamanınız var!"
+      "body": "Blackfury dApp'i kullanarak airdrop'a katılmaya hak kazanmanın birkaç yolu vardır. Anlık görüntü yayınlanıyor, kalifiye olmak için hala zamanınız var!"
     },
     "staking": {
       "title": "%{asset} Staker",
@@ -1925,28 +1925,28 @@
     },
     "lp": {
       "title": "%{asset1}/%{asset2} Sağlayıcılar",
-      "body": "Elinizde %{asset1} ve %{asset2} var mı? %{apy} APR kazanmak için Uniswap V2 Havuzuna likidite sağlayın. AYRICA, sahip olduğunuz FOX/ETH LP tokenlarındaki temel FOX, Arkeo airdrop için uygun olacaktır.",
+      "body": "Elinizde %{asset1} ve %{asset2} var mı? %{apy} APR kazanmak için Uniswap V2 Havuzuna likidite sağlayın. AYRICA, sahip olduğunuz FURY/ETH LP tokenlarındaki temel FURY, Arkeo airdrop için uygun olacaktır.",
       "cta": "Likidite Ekleyin"
     },
-    "foxTokenHolders": {
-      "title": "FOX Token Sahipleri",
-      "body": "Cüzdanda tutulan FOX token'ları. Çantanız ne kadar büyükse, Arkeo airdrop'unuz da o kadar büyük olur.",
-      "cta": "FOX Takas yap",
-      "secondary": "FOX Satın Al"
+    "furyTokenHolders": {
+      "title": "FURY Token Sahipleri",
+      "body": "Cüzdanda tutulan FURY token'ları. Çantanız ne kadar büyükse, Arkeo airdrop'unuz da o kadar büyük olur.",
+      "cta": "FURY Takas yap",
+      "secondary": "FURY Satın Al"
     },
-    "foxFarmers": {
-      "title": "FOX/ETH LP Çiftçiler",
-      "body": "FOX Farm'da ETH/FOX LP jetonlarınızı staking yaparak %{apy} APR'ye kadar kazanın. AYRICA FOX Farm'ın 5. Turunda yatırdığınız ETH/FOX LP tokenlerinin temelinde yatan FOX, Arkeo airdrop'u için hak kazanacaktır.",
-      "cta": "FOX/ETH LP Stake Et"
+    "furyFarmers": {
+      "title": "FURY/ETH LP Çiftçiler",
+      "body": "FURY Farm'da ETH/FURY LP jetonlarınızı staking yaparak %{apy} APR'ye kadar kazanın. AYRICA FURY Farm'ın 5. Turunda yatırdığınız ETH/FURY LP tokenlerinin temelinde yatan FURY, Arkeo airdrop'u için hak kazanacaktır.",
+      "cta": "FURY/ETH LP Stake Et"
     },
-    "foxyTokenHolders": {
-      "title": "FOXy Token Sahipleri",
-      "body": "FOX Yieldy (FOXy) ile boştaki FOX'unuzdan %{apy}'ye kadar APR kazanın. AYRICA Cüzdanınızda tutulan FOXy, FOX ile aynı muameleyi görecek ve Arkeo airdrop için uygun olacaktır.",
-      "cta": "FOX Token Stake Et"
+    "jinxTokenHolders": {
+      "title": "FURYy Token Sahipleri",
+      "body": "FURY Yieldy (FURYy) ile boştaki FURY'unuzdan %{apy}'ye kadar APR kazanın. AYRICA Cüzdanınızda tutulan FURYy, FURY ile aynı muameleyi görecek ve Arkeo airdrop için uygun olacaktır.",
+      "cta": "FURY Token Stake Et"
     },
-    "foxEthProviders": {
-      "title": "FOX/ETH Uniswap V2 LP'ler",
-      "body": "%{asset1} ve %{asset2}'ye sahip misiniz? Uniswap V2 Havuzuna likidite sağlayarak %{apy} APR kazanın. AYRICA, sahip olduğunuz FOX/ETH LP tokenlarındaki temel FOX, Arkeo airdrop için uygun olacaktır.",
+    "furyEthProviders": {
+      "title": "FURY/ETH Uniswap V2 LP'ler",
+      "body": "%{asset1} ve %{asset2}'ye sahip misiniz? Uniswap V2 Havuzuna likidite sağlayarak %{apy} APR kazanın. AYRICA, sahip olduğunuz FURY/ETH LP tokenlarındaki temel FURY, Arkeo airdrop için uygun olacaktır.",
       "cta": "Likidite Ekleyin"
     },
     "atomOsmoProviders": {
@@ -1956,15 +1956,15 @@
     },
     "stakeAtom": {
       "title": "ATOM Stake",
-      "body": "Boş ATOM'nuzdan %{apr} APR'ye kadar kazanın. AYRICA, stake ettiğiniz herhangi bir ATOM size Arkeo jetonları kazandırır. ShapeShift DAO Validator'a stake yaparsanız, airdrop kalifikasyonunuzu 2 kat artırabilirsiniz.",
+      "body": "Boş ATOM'nuzdan %{apr} APR'ye kadar kazanın. AYRICA, stake ettiğiniz herhangi bir ATOM size Arkeo jetonları kazandırır. Blackfury DAO Validator'a stake yaparsanız, airdrop kalifikasyonunuzu 2 kat artırabilirsiniz.",
       "cta": "ATOM Stake"
     },
     "stakeOsmo": {
       "title": "OSMO Stake ",
-      "body": "Boştaki OSMO'nuzdan %{apr} APR'ye kadar kazanın. AYRICA, stake ettiğiniz herhangi bir OSMO size Arkeo jetonları kazandırır. ShapeShift DAO Validator'a stake yaparsanız, airdrop kalifikasyonunuzu 2 kat artırabilirsiniz."
+      "body": "Boştaki OSMO'nuzdan %{apr} APR'ye kadar kazanın. AYRICA, stake ettiğiniz herhangi bir OSMO size Arkeo jetonları kazandırır. Blackfury DAO Validator'a stake yaparsanız, airdrop kalifikasyonunuzu 2 kat artırabilirsiniz."
     },
     "footer": {
-      "title": "ShapeShift dApp dışında hak kazanabileceğiniz başka yollar da var. Tam liste için yönetişim teklifine göz atın.",
+      "title": "Blackfury dApp dışında hak kazanabileceğiniz başka yollar da var. Tam liste için yönetişim teklifine göz atın.",
       "cta": "Yönetişim teklifine göz atın",
       "disclaimer": {
         "body": "* Yalnızca kişisel saklama cüzdanları geçerli olacaktır. Merkezi bir borsa aracılığıyla bir cüzdanda tutulan veya stake edilen jetonlar uygun değildir. Cüzdana mı ihtiyacınız var?",
@@ -1973,7 +1973,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "FOXatar'ını Özelleştir",
+    "customizeFuryatar": "FURYatar'ını Özelleştir",
     "setAsAvatar": "Avatar olarak ayarla",
     "floorPrice": "Taban Fiyat",
     "lastPrice": "Son fiyat",
@@ -1992,7 +1992,7 @@
     "emptyBody": "Endişelenmeyin, daha harika NFT'leri geri getirmek için bir arama grubu gönderdik. Bu arada, bu boşluğa bakıp varoluşun anlamını düşünmekten çekinmeyin."
   },
   "missions": {
-    "subtitle": "FOX Görevleri",
+    "subtitle": "FURY Görevleri",
     "missionEnded": "Görev Sona Erdi",
     "viewMission": "Görevleri Görüntüle",
     "comingSoon": "Yakında",
@@ -2002,7 +2002,7 @@
       "1": "Merkezi Olmayan Evreni Serbest Bırakın ve",
       "2": "Ödülleri Dağıt"
     },
-    "body": "Görevlere Katılın, Ödüller Kazanın ve Sürekli Genişleyen ShapeShift Ekosistemi hakkındaki bilginizi artırın",
+    "body": "Görevlere Katılın, Ödüller Kazanın ve Sürekli Genişleyen Blackfury Ekosistemi hakkındaki bilginizi artırın",
     "ends": "Son",
     "ongoing": "Devam Eden Görev",
     "optimism": {
@@ -2010,14 +2010,14 @@
       "subtitle": "Optimism'i Keşfedin",
       "cta": "Göreve Başla"
     },
-    "foxatar": {
+    "furyatar": {
       "title": "Ücretsiz ve Özelleştirilebilir bir NFT edinin",
-      "subtitle": "FOXatar'ı Basın",
+      "subtitle": "FURYatar'ı Basın",
       "cta": "Göreve Başla"
     },
-    "foxArmy": {
-      "subtitle": "FOX Ordusuna Katılın",
-      "title": "20.000 FOX Havuzu",
+    "furyArmy": {
+      "subtitle": "FURY Ordusuna Katılın",
+      "title": "20.000 FURY Havuzu",
       "cta": "Göreve Başla"
     },
     "yat": {
@@ -2030,9 +2030,9 @@
       "title": "Görevler İçin Bir Proje Başlatın",
       "cta": "Projeyi Gönder"
     },
-    "foxRewards": {
+    "furyRewards": {
       "subtitle": "Satın alın, satın, ticaret yapın, kazanın ve daha fazlasını yapın",
-      "title": "FOX Kazanın",
+      "title": "FURY Kazanın",
       "cta": "Göreve Başla"
     }
   },

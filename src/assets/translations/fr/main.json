@@ -135,7 +135,7 @@
     "disclaimer": "*Vous pouvez aussi vendre des cryptos directement pour de l'argent sur votre compte bancaire.",
     "cta": {
       "title": {
-        "first": "Vous pouvez aussi utiliser ShapeShift avec tous les principaux porte-monnaie pour échanger, gagner du rendement et",
+        "first": "Vous pouvez aussi utiliser Blackfury avec tous les principaux porte-monnaie pour échanger, gagner du rendement et",
         "second": "suivre vos cryptos sur %{chainCount} chaînes"
       }
     },
@@ -222,11 +222,11 @@
     "notSupported": "%{asset} n'est pas pris en charge par %{wallet}"
   },
   "connectWalletPage": {
-    "shapeshift": "ShapeShift",
+    "shapeshift": "Blackfury",
     "exploreThe": "Explorez",
     "defiUniverse": "l'Univers DeFi",
     "body": "100% Gratuit. Open‑Source. Propriété communautaire. Non‑dépositaire. Privé.",
-    "body2": "Bienvenue sur le nouveau ShapeShift. 100% Gratuit. Open‑Source. Propriété communautaire. Non‑dépositaire. Privé.",
+    "body2": "Bienvenue sur le nouveau Blackfury. 100% Gratuit. Open‑Source. Propriété communautaire. Non‑dépositaire. Privé.",
     "header": "Veuillez connecter un porte-monnaie pour commencer.",
     "cta": "Connecter un porte-monnaie",
     "viewADemo": "Voir une démo"
@@ -281,22 +281,22 @@
         "emptyWithdraws": "Les demandes de démise en attente s'affichent ici.",
         "availableDate": "disponible %{date}"
       },
-      "foxyOverview": {
-        "header": "Déposer du FOX pour obtenir du FOXy afin de gagner",
-        "body": "FOXy est un jeton de rebasage indexé sur le prix de FOX. Les FOX misés sont mis à contribution sur différents protocoles DeFi pour obtenir le meilleur rendement possible.",
+      "jinxOverview": {
+        "header": "Déposer du FURY pour obtenir du FURYy afin de gagner",
+        "body": "FURYy est un jeton de rebasage indexé sur le prix de FURY. Les FURY misés sont mis à contribution sur différents protocoles DeFi pour obtenir le meilleur rendement possible.",
         "rewards": "Les récompenses que vous gagnez s'accumuleront automatiquement.",
-        "cta": "Déposer des FOX maintenant",
-        "foxyBalance": "Solde FOXy",
+        "cta": "Déposer des FURY maintenant",
+        "jinxBalance": "Solde FURYy",
         "withdrawals": "Retraits",
         "emptyWithdraws": "Les retraits en attente ou actifs s'afficheront ici.",
         "availableDate": "disponible %{date}"
       },
-      "foxFarmingOverview": {
-        "header": "Déposer des jetons LP ETH-FOX dans %{opportunity} pour gagner",
-        "body": "Autorisez et misez vos jetons de liquidité pour gagner des récompenses bonus en FOX.",
+      "furyFarmingOverview": {
+        "header": "Déposer des jetons LP ETH-FURY dans %{opportunity} pour gagner",
+        "body": "Autorisez et misez vos jetons de liquidité pour gagner des récompenses bonus en FURY.",
         "rewards": "Les récompenses que vous gagnez s'accumuleront automatiquement.",
-        "cta": "Déposer des jetons LP ETH-FOX maintenant",
-        "foxFarmingBalance": "Solde de jetons LP ETH-FOX",
+        "cta": "Déposer des jetons LP ETH-FURY maintenant",
+        "furyFarmingBalance": "Solde de jetons LP ETH-FURY",
         "withdrawals": "Retraits",
         "emptyWithdraws": "Les retraits en attente ou actifs s'afficheront ici.",
         "availableDate": "disponible %{date}"
@@ -354,7 +354,7 @@
     },
     "memoNote": {
       "title": "Merci de ne pas modifier le mémo de transaction",
-      "body": "Les transactions provenant de ShapeShift aident à soutenir la DAO."
+      "body": "Les transactions provenant de Blackfury aident à soutenir la DAO."
     },
     "amountToStake": "Montant à miser",
     "amountToUnstake": "Montant à démiser",
@@ -407,7 +407,7 @@
     "earnBalance": "Solde dans Gagner",
     "rewardsBalance": "Solde des récompenses",
     "earnBody": "Gagnez des revenus passifs en misant vos actifs ou en les déposant dans une stratégie DeFi.",
-    "clickHereToEarn": "Cliquez ici pour gagner %{apr} d'APR* avec le farming de vos jetons de pool de liquidités ETH-FOX",
+    "clickHereToEarn": "Cliquez ici pour gagner %{apr} d'APR* avec le farming de vos jetons de pool de liquidités ETH-FURY",
     "overview": "Vue d'ensemble",
     "myPositions": "Mes positions",
     "myPositionsBody": "Vos positions actives apparaîtront ici.",
@@ -502,7 +502,7 @@
     "overview": "Vue d'ensemble",
     "transactions": "Transactions",
     "tradeHistory": "Historique des échanges",
-    "foxToken": "Opportunités FOX",
+    "furyToken": "Opportunités FURY",
     "dApps": "dApps",
     "featureFlags": "Indicateurs de fonctionnalité",
     "demoMode": "Mode démo",
@@ -515,8 +515,8 @@
     "buyCrypto": "Acheter/Vendre des cryptos",
     "buyCryptoShort": "Achat/Vente",
     "arkeo": "Airdrop Arkeo",
-    "foxMissions": "Missions FOX",
-    "foxMissionsShort": "Missions"
+    "furyMissions": "Missions FURY",
+    "furyMissionsShort": "Missions"
   },
   "transactionRow": {
     "send": "Envoi",
@@ -567,7 +567,7 @@
       "thor": {
         "transferOut": "Transfert sortant"
       },
-      "foxy": {
+      "jinx": {
         "stake": "Mise",
         "unstake": "Démise",
         "instantUnstake": "Démise instantanée",
@@ -654,7 +654,7 @@
     "youGet": "Vous obtenez",
     "tradeTo": "Échanger en",
     "minerFee": "Frais de minage",
-    "donation": "Don ShapeShift",
+    "donation": "Don Blackfury",
     "protocolFee": "Frais de protocole",
     "protocol": "Protocole",
     "tradeFeeSource": "Frais %{tradeFeeSource}",
@@ -684,12 +684,12 @@
     "tooltip": {
       "rate": "C'est le taux estimé pour cette paire d'échange.",
       "noRateAvailable": "Cela est souvent dû à une liquidité très limitée ou inexistante sur la paire d'échange.",
-      "minerFee": "Il s'agit des frais de traitement de la transaction sur la blockchain, ce ne sont pas des frais facturés par ShapeShift.",
-      "donation": "Aidez à soutenir ShapeShift et maintenez-nous opérationnels.",
+      "minerFee": "Il s'agit des frais de traitement de la transaction sur la blockchain, ce ne sont pas des frais facturés par Blackfury.",
+      "donation": "Aidez à soutenir Blackfury et maintenez-nous opérationnels.",
       "protocol": "C'est le protocole avec lequel votre échange est routé.",
       "protocolLifi": "C'est le protocole par lequel votre échange est routé. LI.FI exécute une série de transactions intermédiaires pour trouver la meilleure combinaison globale de prix, de sécurité et de rapidité.",
-      "protocolFee": "Il s'agit des frais facturés par le protocole sélectionné pour traiter cette transaction, il ne s'agit pas de frais facturés par ShapeShift",
-      "shapeshiftFee": "ShapeShift n'ajoute aucun frais sur les échanges 🎉",
+      "protocolFee": "Il s'agit des frais facturés par le protocole sélectionné pour traiter cette transaction, il ne s'agit pas de frais facturés par Blackfury",
+      "shapeshiftFee": "Blackfury n'ajoute aucun frais sur les échanges 🎉",
       "manualReceiveAddress": "C'est l'adresse à laquelle vous recevrez vos fonds. Elle a été saisie manuellement, veuillez vous assurer qu'elle est correcte."
     },
     "rates": {
@@ -872,7 +872,7 @@
         "info": {
           "title": "Votre phrase secrète de récupération",
           "description": "Écrivez ces 12 mots et stockez-les en toute sécurité hors ligne. Cette phrase de 12 mots est utilisée pour récupérer les clés privées de votre porte-monnaie.",
-          "warning": "Remarque : si vous perdez votre phrase secrète de récupération, ShapeShift ne peut pas vous aider à récupérer votre porte-monnaie et vos fonds seront perdus pour toujours."
+          "warning": "Remarque : si vous perdez votre phrase secrète de récupération, Blackfury ne peut pas vous aider à récupérer votre porte-monnaie et vos fonds seront perdus pour toujours."
         },
         "success": {
           "title": "Succès",
@@ -1003,7 +1003,7 @@
     },
     "approve": {
       "header": "Autoriser %{spenderName} à utiliser vos %{asset}",
-      "shapeshiftRouterName": "Routeur ShapeShift DAO",
+      "shapeshiftRouterName": "Routeur Blackfury DAO",
       "body": "a besoin de votre permission pour utiliser vos %{asset}",
       "learnMore": "Pourquoi dois-je faire cela ?",
       "depositFee": "Il y aura des frais de carburant séparés à déposer.",
@@ -1101,7 +1101,7 @@
     "mobileWelcome": {
       "success": {
         "header": "Votre porte-monnaie a été importé !",
-        "body": "Bienvenue dans la nouvelle app ShapeShift.",
+        "body": "Bienvenue dans la nouvelle app Blackfury.",
         "primaryCta": "Continuer"
       },
       "notice": {
@@ -1247,7 +1247,7 @@
       },
       "redirect": {
         "header": "Ouvrir dans l'app MetaMask",
-        "body": "Cliquez pour ouvrir le tableau de bord de ShapeShift dans MetaMask",
+        "body": "Cliquez pour ouvrir le tableau de bord de Blackfury dans MetaMask",
         "button": "Ouvrir"
       }
     },
@@ -1299,7 +1299,7 @@
       },
       "redirect": {
         "header": "Ouvrir dans l'app XDEFI",
-        "body": "Cliquez pour ouvrir le tableau de bord de ShapeShift dans XDEFI",
+        "body": "Cliquez pour ouvrir le tableau de bord de Blackfury dans XDEFI",
         "button": "Ouvrir"
       }
     },
@@ -1326,7 +1326,7 @@
       "password": {
         "header": "Créer un nouveau mot de passe",
         "body": "Saisissez un mot de passe fort pour crypter votre porte-monnaie importé. C'est ainsi que vous accéderez à votre porte-monnaie.",
-        "warning": "Remarque : si vous oubliez votre mot de passe, ShapeShift ne peut pas vous aider à le récupérer.",
+        "warning": "Remarque : si vous oubliez votre mot de passe, Blackfury ne peut pas vous aider à le récupérer.",
         "button": "Suivant",
         "connect": "Se connecter à un autre porte-monnaie"
       },
@@ -1338,8 +1338,8 @@
         "showWords": "Montrer les mots"
       },
       "start": {
-        "header": "Porte-monnaie ShapeShift",
-        "body": "Vous pouvez avoir plusieurs porte-monnaie ShapeShift. Vous pouvez charger un porte-monnaie, importer un porte-monnaie à partir d'une phrase de récupération secrète ou créer un nouveau porte-monnaie.",
+        "header": "Porte-monnaie Blackfury",
+        "body": "Vous pouvez avoir plusieurs porte-monnaie Blackfury. Vous pouvez charger un porte-monnaie, importer un porte-monnaie à partir d'une phrase de récupération secrète ou créer un nouveau porte-monnaie.",
         "import": "Importer un porte-monnaie",
         "create": "Créer un nouveau porte-monnaie",
         "load": "Porte-monnaie mémorisés"
@@ -1389,15 +1389,15 @@
         "confirmDelete": "Êtes-vous sûr de vouloir supprimer le surnom de ce porte-monnaie ?"
       },
       "legacy": {
-        "deprecatedWarning": "L'identification ShapeShift est progressivement abandonnée",
+        "deprecatedWarning": "L'identification Blackfury est progressivement abandonnée",
         "learnMore": "En savoir plus",
         "alreadySavedConfirm": "Je confirme que ma phrase secrète de récupération est déjà sauvegardée en toute sécurité.",
-        "mobileWalletTitle": "Porte-monnaie mobile ShapeShift",
-        "importInformations": "Pour continuer à utiliser votre porte-monnaie mobile ShapeShift vous devrez l'importer.",
+        "mobileWalletTitle": "Porte-monnaie mobile Blackfury",
+        "importInformations": "Pour continuer à utiliser votre porte-monnaie mobile Blackfury vous devrez l'importer.",
         "importWallet": "Importer un porte-monnaie",
-        "haveMobileWallet": "Vous avez un porte-monnaie mobile ShapeShift ?",
-        "loginWithAccount": "Se connecter avec un compte ShapeShift",
-        "loginInformations": "Entrez votre adresse de courriel et le mot de passe que vous utilisez pour vous connecter à votre application mobile ShapeShift.",
+        "haveMobileWallet": "Vous avez un porte-monnaie mobile Blackfury ?",
+        "loginWithAccount": "Se connecter avec un compte Blackfury",
+        "loginInformations": "Entrez votre adresse de courriel et le mot de passe que vous utilisez pour vous connecter à votre application mobile Blackfury.",
         "loginSuccess": "Connexion réussie",
         "emailAddress": "Adresse de courriel",
         "password": "Mot de passe",
@@ -1407,7 +1407,7 @@
         "captchaRequired": "Le Capcha est requis",
         "tooManyAttempts": "Trop de tentatives, veuillez réessayer plus tard.",
         "invalidLogin": "Identification invalide",
-        "noWallet": "Impossible de trouver un porte-monnaie ShapeShift pour votre connexion. Si vous pensez que ce message est une erreur, veuillez contacter le support ShapeShift.",
+        "noWallet": "Impossible de trouver un porte-monnaie Blackfury pour votre connexion. Si vous pensez que ce message est une erreur, veuillez contacter le support Blackfury.",
         "decryptionError": "Une erreur s'est produite lors du décryptage de votre porte-monnaie.",
         "twoFactorAuthentication": "Authentification à deux facteurs",
         "twoFactorPlaceholder": "Code à 6 chiffres",
@@ -1417,9 +1417,9 @@
       },
       "onboarding": {
         "skip": "Sauter",
-        "shapeshiftWallet": "Porte-monnaie ShapeShift",
+        "shapeshiftWallet": "Porte-monnaie Blackfury",
         "selfCustody": {
-          "title": "Votre porte-monnaie ShapeShift est auto-dépositaire",
+          "title": "Votre porte-monnaie Blackfury est auto-dépositaire",
           "subTitle": "Vous détenez les clés et vous êtes seul à pouvoir y accéder.",
           "body": "Un porte-monnaie auto-dépositaire signifie que vous le possédez et qu'uniquement vous avez accès à vos fonds. Votre phrase de récupération secrète est votre clé pour y accéder. Personne ne peut vous empêcher d'accéder à vos fonds.",
           "cta": "Suivant"
@@ -1427,12 +1427,12 @@
         "multiChain": {
           "title": "Plusieurs chaînes sont prises en charge simultanément",
           "subTitle": "Vous n'avez jamais besoin de changer de chaîne dans le porte-monnaie, il fonctionne avec chaque chaîne de manière transparente.",
-          "body": "Lorsqu'une nouvelle chaîne est ajoutée sur ShapeShift, votre porte-monnaie ShapeShift la prend en charge automatiquement.",
+          "body": "Lorsqu'une nouvelle chaîne est ajoutée sur Blackfury, votre porte-monnaie Blackfury la prend en charge automatiquement.",
           "cta": "Suivant"
         },
         "easyToUse": {
           "title": "Il est facile à utiliser !",
-          "subTitle": "Avec le porte-monnaie ShapeShift, vous pouvez :",
+          "subTitle": "Avec le porte-monnaie Blackfury, vous pouvez :",
           "trackBalance": "Suivre vos soldes",
           "sendReceive": "Envoyer/recevoir des cryptos",
           "buyCrypto": "Acheter des cryptos",
@@ -1445,7 +1445,7 @@
     },
     "selectModal": {
       "header": "Connecter un porte-monnaie",
-      "body": "En connectant un porte-monnaie, vous acceptez les conditions d'utilisation de ShapeShift et reconnaissez avoir lu et compris la clause de non-responsabilité de ShapeShift.",
+      "body": "En connectant un porte-monnaie, vous acceptez les conditions d'utilisation de Blackfury et reconnaissez avoir lu et compris la clause de non-responsabilité de Blackfury.",
       "footer": "Vous n'avez pas de porte-monnaie ?",
       "create": "Créez-en un"
     },
@@ -1575,7 +1575,7 @@
     },
     "downloadCSV": "Télécharger CSV",
     "csv": {
-      "fileName": "Historique des transactions ShapeShift",
+      "fileName": "Historique des transactions Blackfury",
       "txid": "ID TX",
       "type": "Type TX",
       "timestamp": "Horodatage",
@@ -1614,57 +1614,57 @@
     "transfers": "Transferts"
   },
   "plugins": {
-    "foxPage": {
+    "jinxPage": {
       "buyAssetOnCoinbase": "Acheter %{assetSymbol} sur Coinbase",
-      "totalFoxValue": "Valeur totale des FOX",
-      "foxToken": "Jeton %{assetSymbol} de ShapeShift",
-      "foxDescription": "Depuis 2019, notre jeton FOX offre aux utilisateurs un éventail toujours plus vaste d'utilités et d'avantages. Aujourd'hui, notre jeton de gouvernance ERC-20 vous permet non seulement d'influencer l'avenir de ShapeShift par votre vote, mais vous disposez également d'un univers toujours plus vaste d'opportunités d'investissement. Investissez, suivez et gérez vos avoirs FOX ici.",
+      "totalFuryValue": "Valeur totale des FURY",
+      "furyToken": "Jeton %{assetSymbol} de Blackfury",
+      "furyDescription": "Depuis 2019, notre jeton FURY offre aux utilisateurs un éventail toujours plus vaste d'utilités et d'avantages. Aujourd'hui, notre jeton de gouvernance ERC-20 vous permet non seulement d'influencer l'avenir de Blackfury par votre vote, mais vous disposez également d'un univers toujours plus vaste d'opportunités d'investissement. Investissez, suivez et gérez vos avoirs FURY ici.",
       "getAsset": "Obtenir du %{assetSymbol}",
       "trade": "Échanger",
       "receive": "Recevoir",
       "mainStakingTitle": "Mises de jetons %{assetSymbol}",
-      "mainStakingDescription": "Mettez votre FOX au travail dans des contrats de mise unilatéraux pour gagner des récompenses FOX. (vos FOX peuvent toujours être utilisés pour la gouvernance lorsqu'ils sont misés, mais ils sont autrement verrouillés dans le contrat durant la mise.)",
+      "mainStakingDescription": "Mettez votre FURY au travail dans des contrats de mise unilatéraux pour gagner des récompenses FURY. (vos FURY peuvent toujours être utilisés pour la gouvernance lorsqu'ils sont misés, mais ils sont autrement verrouillés dans le contrat durant la mise.)",
       "tvl": "TVL",
       "currentApy": "APY actuel",
       "balance": "Solde",
       "getStarted": "Commencer",
       "manage": "Gérer",
       "currentPrice": "Prix actuel",
-      "tradingUnavailable": "Les %{assetSymbol} ne sont pas encore échangeables sur ShapeShift. Vous pouvez échanger des %{assetSymbol} sur ElasticSwap.",
+      "tradingUnavailable": "Les %{assetSymbol} ne sont pas encore échangeables sur Blackfury. Vous pouvez échanger des %{assetSymbol} sur ElasticSwap.",
       "tradeOnElasticSwap": "Échanger des %{assetSymbol} sur ElasticSwap",
       "otherOpportunitiesTitle": {
-        "FOX": "Autres opportunités",
-        "FOXy": "Opportunités"
+        "FURY": "Autres opportunités",
+        "FURYy": "Opportunités"
       },
       "otherOpportunitiesDescription": {
-        "FOX": "Explorez les nombreuses possibilités pour fournir des liquidités, recourir au farming de rendement, prêter et d'emprunter. Cliquez sur les liens \"Commencer\" ci-dessous pour visiter les sites externes qui vous intéressent afin d'en apprendre davantage — et mettez votre FOX à votre service.",
-        "FOXy": "Achetez rapidement et facilement du FOXy, le premier jeton de rebasement DAO de l'industrie qui offre à la fois des récompenses de rendement et de profit."
+        "FURY": "Explorez les nombreuses possibilités pour fournir des liquidités, recourir au farming de rendement, prêter et d'emprunter. Cliquez sur les liens \"Commencer\" ci-dessous pour visiter les sites externes qui vous intéressent afin d'en apprendre davantage — et mettez votre FURY à votre service.",
+        "FURYy": "Achetez rapidement et facilement du FURYy, le premier jeton de rebasement DAO de l'industrie qui offre à la fois des récompenses de rendement et de profit."
       },
       "liquidityPools": "Pools de liquidité",
       "farming": "Farming",
       "borrowingAndLending": "Emprunter & prêter",
       "governanceTitle": "Gouvernance",
-      "governanceDescription": "En tant que détenteur de FOX, vous pouvez avoir votre mot à dire sur l'avenir de ShapeShift. Vous trouverez ci-dessous les propositions actives ou récemment adoptées de la DAO sur lesquelles les détenteurs de jetons votent.",
+      "governanceDescription": "En tant que détenteur de FURY, vous pouvez avoir votre mot à dire sur l'avenir de Blackfury. Vous trouverez ci-dessous les propositions actives ou récemment adoptées de la DAO sur lesquelles les détenteurs de jetons votent.",
       "seeAllProposals": "Voir toutes les propositions",
       "availableToTradeOn": "Disponible pour les échanges sur",
       "dex": "DEX",
       "centralized": "Centralisé",
       "dappBack": {
-        "title": "✨ Récompenses en FOX et plus encore ! ✨",
-        "body": "Gagnez des récompenses en FOX en accomplissant des tâches sur DappBack",
+        "title": "✨ Récompenses en FURY et plus encore ! ✨",
+        "body": "Gagnez des récompenses en FURY en accomplissant des tâches sur DappBack",
         "cta": "Lancer DappBack"
       },
       "bondProtocol": {
-        "title": "Achetez de FOX à prix réduit !",
-        "body": "Achetez FOX à prix réduit avec BondProtocol",
+        "title": "Achetez de FURY à prix réduit !",
+        "body": "Achetez FURY à prix réduit avec BondProtocol",
         "cta": "Lancer BondProtocol"
       }
     },
     "analytics": {
       "optInModal": {
-        "title": "Aidez-nous à améliorer ShapeShift",
-        "description": "ShapeShift souhaite recueillir des données d'utilisation afin de mieux comprendre comment nos utilisateurs interagissent avec l'application. Ces données seront utilisées pour améliorer continuellement la convivialité et l'expérience utilisateur de notre produit.",
-        "actionsSentence": "ShapeShift ...",
+        "title": "Aidez-nous à améliorer Blackfury",
+        "description": "Blackfury souhaite recueillir des données d'utilisation afin de mieux comprendre comment nos utilisateurs interagissent avec l'application. Ces données seront utilisées pour améliorer continuellement la convivialité et l'expérience utilisateur de notre produit.",
+        "actionsSentence": "Blackfury ...",
         "noThanks": "Non merci, dirigez-moi vers la version privée",
         "sendEvents": "Va envoyer des événements anonymisés de clics et de pages vues",
         "neverCollectPersonalInformations": "Ne collecte jamais de clés, d'adresses, de transactions, de soldes ou d'autres informations personnelles",
@@ -1675,7 +1675,7 @@
     "walletConnectToDapps": {
       "unsupportedToast": {
         "title": "Chaîne non prise en charge",
-        "description": "ShapeShift ne prend actuellement en charge que %{supportedChainNames} avec WalletConnect."
+        "description": "Blackfury ne prend actuellement en charge que %{supportedChainNames} avec WalletConnect."
       },
       "header": {
         "connectDapp": "Connecter la dApp",
@@ -1795,7 +1795,7 @@
       "usdcAddress": "Adresse USDC du Yat",
       "ethAddress": "Adresse ETH du Yat",
       "noAddressFound": "Aucune adresse %{symbol} trouvée",
-      "viewInApp": "Consulter dans l'app mobile ShapeShift"
+      "viewInApp": "Consulter dans l'app mobile Blackfury"
     }
   },
   "gasInput": {
@@ -1908,7 +1908,7 @@
       "bodyParts": {
         "1": "L'année dernière, aux côtés de",
         "2": "Coinbase Cloud",
-        "3": "ShapeShift a incubé un projet appelé Arkeo. Le lancement du réseau principal (mainnet) approche à grands pas !",
+        "3": "Blackfury a incubé un projet appelé Arkeo. Le lancement du réseau principal (mainnet) approche à grands pas !",
         "4": "Arkeo a été créé pour être un backend décentralisé pour toutes les données de nœuds. Les applications qui utilisent Arkeo bénéficieront d'un accroissement de vitesse de développement, de résistance à la censure et de leur",
         "5": "coefficient nakamoto",
         "6": "tout en réduisant la dépendance aux sources de données centralisées."
@@ -1916,7 +1916,7 @@
     },
     "whoQualifies": {
       "title": "Qui peut bénéficier de l'Airdrop Arkeo ?",
-      "body": "Il existe plusieurs façons de se qualifier pour l'Airdrop à l'aide de la dApp ShapeShift. Le snapshot est étalé dans le temps, vous avez encore le temps de vous qualifier !"
+      "body": "Il existe plusieurs façons de se qualifier pour l'Airdrop à l'aide de la dApp Blackfury. Le snapshot est étalé dans le temps, vous avez encore le temps de vous qualifier !"
     },
     "staking": {
       "title": "Miseurs de %{asset}",
@@ -1925,28 +1925,28 @@
     },
     "lp": {
       "title": "Fournisseurs de %{asset1}/%{asset2}",
-      "body": "Vous avez des %{asset1} et des %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FOX sous-jacents dans les jetons LP FOX/ETH que vous détenez se qualifieront pour l'Airdrop Areko.",
+      "body": "Vous avez des %{asset1} et des %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FURY sous-jacents dans les jetons LP FURY/ETH que vous détenez se qualifieront pour l'Airdrop Areko.",
       "cta": "Déposer des liquidités"
     },
-    "foxTokenHolders": {
-      "title": "Détenteurs de jetons FOX",
-      "body": "Hodler des jetons FOX. Plus votre poche est grande, plus votre Airdrop Arkeo est grand.",
-      "cta": "Échanger contre des FOX",
-      "secondary": "Acheter des FOX"
+    "furyTokenHolders": {
+      "title": "Détenteurs de jetons FURY",
+      "body": "Hodler des jetons FURY. Plus votre poche est grande, plus votre Airdrop Arkeo est grand.",
+      "cta": "Échanger contre des FURY",
+      "secondary": "Acheter des FURY"
     },
-    "foxFarmers": {
-      "title": "Farmeurs de LP FOX/ETH",
-      "body": "Gagnez jusqu'à %{apy} APR en misant vos jetons LP ETH/FOX dans la FOX Farm. DE PLUS, les FOX sous-jacents dans les jetons LP ETH/FOX que vous misez dans le Round 5 de la FOX Farm se qualifieront pour l'Airdrop Arkeo.",
-      "cta": "Miser des LP FOX/ETH"
+    "furyFarmers": {
+      "title": "Farmeurs de LP FURY/ETH",
+      "body": "Gagnez jusqu'à %{apy} APR en misant vos jetons LP ETH/FURY dans la FURY Farm. DE PLUS, les FURY sous-jacents dans les jetons LP ETH/FURY que vous misez dans le Round 5 de la FURY Farm se qualifieront pour l'Airdrop Arkeo.",
+      "cta": "Miser des LP FURY/ETH"
     },
-    "foxyTokenHolders": {
-      "title": "Détenteurs de jetons FOXy",
-      "body": "Gagnez jusqu'à %{apy} APR sur vos FOX inactifs avec FOX Yieldy (FOXy). DE PLUS, les FOXy détenus dans votre porte-monnaie seront traités de la même manière que des FOX et se qualifieront pour l'Airdrop Arkeo.",
-      "cta": "Miser des jetons FOX"
+    "jinxTokenHolders": {
+      "title": "Détenteurs de jetons FURYy",
+      "body": "Gagnez jusqu'à %{apy} APR sur vos FURY inactifs avec FURY Yieldy (FURYy). DE PLUS, les FURYy détenus dans votre porte-monnaie seront traités de la même manière que des FURY et se qualifieront pour l'Airdrop Arkeo.",
+      "cta": "Miser des jetons FURY"
     },
-    "foxEthProviders": {
-      "title": "LP de FOX/ETH sur Uniswap V2",
-      "body": "Vous avez %{asset1} et %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FOX sous-jacents dans les jetons LP FOX/ETH que vous détenez se qualifieront pour l'Airdrop Arkeo.",
+    "furyEthProviders": {
+      "title": "LP de FURY/ETH sur Uniswap V2",
+      "body": "Vous avez %{asset1} et %{asset2} ? Fournissez des liquidités au pool Uniswap V2 pour gagner %{apy} APR. DE PLUS, les FURY sous-jacents dans les jetons LP FURY/ETH que vous détenez se qualifieront pour l'Airdrop Arkeo.",
       "cta": "Déposer des liquidités"
     },
     "atomOsmoProviders": {
@@ -1956,15 +1956,15 @@
     },
     "stakeAtom": {
       "title": "Miser des ATOM",
-      "body": "Gagnez jusqu'à %{apr} APR sur vos ATOM inactifs. DE PLUS, tout les ATOM que vous misez vous rapportent des jetons Arkeo. Si vous misez sur le validateur ShapeShift DAO, vous pouvez doubler votre qualification pour l'Airdrop.",
+      "body": "Gagnez jusqu'à %{apr} APR sur vos ATOM inactifs. DE PLUS, tout les ATOM que vous misez vous rapportent des jetons Arkeo. Si vous misez sur le validateur Blackfury DAO, vous pouvez doubler votre qualification pour l'Airdrop.",
       "cta": "Miser des ATOM"
     },
     "stakeOsmo": {
       "title": "Miser des OSMO",
-      "body": "Gagnez jusqu'à %{apr} APR sur vos OSMO inactifs. DE PLUS, tous les OSMO que vous misez vous rapportent des jetons Arkeo. Si vous misez sur le validateur ShapeShift DAO, vous pouvez doubler votre qualification pour l'Airdrop."
+      "body": "Gagnez jusqu'à %{apr} APR sur vos OSMO inactifs. DE PLUS, tous les OSMO que vous misez vous rapportent des jetons Arkeo. Si vous misez sur le validateur Blackfury DAO, vous pouvez doubler votre qualification pour l'Airdrop."
     },
     "footer": {
-      "title": "Il existe également d'autres moyens de vous qualifier, en dehors de l'application ShapeShift. Pour une liste complète, consultez la proposition de gouvernance.",
+      "title": "Il existe également d'autres moyens de vous qualifier, en dehors de l'application Blackfury. Pour une liste complète, consultez la proposition de gouvernance.",
       "cta": "Consulter la proposition de gouvernance",
       "disclaimer": {
         "body": "* Seuls les porte-monnaie auto-dépositaires seront éligibles. Les jetons détenus ou misés dans un porte-monnaie via un échange centralisé ne sont pas éligibles. Besoin d'un porte-monnaie ?",
@@ -1973,7 +1973,7 @@
     }
   },
   "nft": {
-    "customizeFoxatar": "Personnaliser le FOXatar",
+    "customizeFuryatar": "Personnaliser le FURYatar",
     "setAsAvatar": "Définir comme avatar",
     "floorPrice": "Prix plancher",
     "lastPrice": "Dernier prix",
@@ -1992,7 +1992,7 @@
     "emptyBody": "Ne vous inquiétez pas, nous avons envoyé une équipe de recherche pour ramener plus de NFT incroyables. En attendant, n'hésitez pas à regarder cet espace vide et à réfléchir au sens de l'existence."
   },
   "missions": {
-    "subtitle": "Missions FOX",
+    "subtitle": "Missions FURY",
     "missionEnded": "Mission terminée",
     "viewMission": "Voir la mission",
     "comingSoon": "Prochainement",
@@ -2002,7 +2002,7 @@
       "1": "Découvrez l'univers décentralisé et",
       "2": "récoltez des récompenses"
     },
-    "body": "Lancez-vous dans des missions, gagnez des récompenses et approfondissez vos connaissances sur l'écosystème en constante expansion de ShapeShift",
+    "body": "Lancez-vous dans des missions, gagnez des récompenses et approfondissez vos connaissances sur l'écosystème en constante expansion de Blackfury",
     "ends": "Finit",
     "ongoing": "Mission en cours",
     "optimism": {
@@ -2010,14 +2010,14 @@
       "subtitle": "Explorez Optimism",
       "cta": "Commencez la mission"
     },
-    "foxatar": {
+    "furyatar": {
       "title": "Obtenez un NFT gratuit et personnalisable",
-      "subtitle": "Mintez un FOXatar",
+      "subtitle": "Mintez un FURYatar",
       "cta": "Commencez la mission"
     },
-    "foxArmy": {
-      "subtitle": "Rejoignez l'armée FOX",
-      "title": "Cagnotte de 20 000 FOX",
+    "furyArmy": {
+      "subtitle": "Rejoignez l'armée FURY",
+      "title": "Cagnotte de 20 000 FURY",
       "cta": "Commencez la mission"
     },
     "yat": {
@@ -2030,9 +2030,9 @@
       "title": "Lancez une Mission pour votre projet",
       "cta": "Soumettez un projet"
     },
-    "foxRewards": {
+    "furyRewards": {
       "subtitle": "Achat, vente, échange, gains et plus encore",
-      "title": "Gagnez des FOX",
+      "title": "Gagnez des FURY",
       "cta": "Commencez la mission"
     }
   },

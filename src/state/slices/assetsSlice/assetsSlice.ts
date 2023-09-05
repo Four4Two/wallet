@@ -6,8 +6,8 @@ import {
   bscChainId,
   fromAssetId,
   gnosisChainId,
+  highburyChainId,
   optimismChainId,
-  osmosisChainId,
   polygonChainId,
 } from '@shapeshiftoss/caip'
 import cloneDeep from 'lodash/cloneDeep'
@@ -131,14 +131,7 @@ export const assetApi = createApi({
             if (!flags.BnbSmartChain && asset.chainId === bscChainId) return prev
             if (!flags.Polygon && asset.chainId === polygonChainId) return prev
             if (!flags.Gnosis && asset.chainId === gnosisChainId) return prev
-            if (
-              !flags.OsmosisSend &&
-              !flags.OsmosisStaking &&
-              !flags.OsmosisSwap &&
-              !flags.OsmosisLP &&
-              asset.chainId === osmosisChainId
-            )
-              return prev
+            if (!flags.Highbury && asset.chainId === highburyChainId) return prev
             prev[assetId] = asset
             return prev
           },

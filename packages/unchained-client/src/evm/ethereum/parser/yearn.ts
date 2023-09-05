@@ -66,7 +66,7 @@ export class Parser implements SubParser<Tx> {
     withdrawSigHash: this.yearnInterface.getSighash('withdraw(uint256,address)'),
   }
 
-  readonly supportedShapeShiftFunctions = {
+  readonly supportedBlackfuryFunctions = {
     depositSigHash: this.shapeShiftInterface.getSighash('deposit(address,address,uint256,uint256)'),
   }
 
@@ -80,7 +80,7 @@ export class Parser implements SubParser<Tx> {
     const txSigHash = getSigHash(tx.inputData)
 
     const supportedSigHashes = [
-      ...Object.values(this.supportedShapeShiftFunctions),
+      ...Object.values(this.supportedBlackfuryFunctions),
       ...Object.values(this.supportedYearnFunctions),
     ]
 
@@ -126,7 +126,7 @@ export class Parser implements SubParser<Tx> {
 
         return { data: { ...data, assetId, value: value.toString() } }
       }
-      case this.supportedShapeShiftFunctions.depositSigHash:
+      case this.supportedBlackfuryFunctions.depositSigHash:
         if (tx.to !== SHAPE_SHIFT_ROUTER_CONTRACT) return
         return { data }
       case this.supportedYearnFunctions.depositAmountAndRecipientSigHash:
@@ -143,7 +143,7 @@ export class Parser implements SubParser<Tx> {
   getAbiInterface(txSigHash: string | undefined): ethers.utils.Interface | undefined {
     if (Object.values(this.supportedYearnFunctions).some(abi => abi === txSigHash))
       return this.yearnInterface
-    if (Object.values(this.supportedShapeShiftFunctions).some(abi => abi === txSigHash))
+    if (Object.values(this.supportedBlackfuryFunctions).some(abi => abi === txSigHash))
       return this.shapeShiftInterface
     return undefined
   }

@@ -1,6 +1,6 @@
 import realFs from 'fs'
 
-import { bitcoinAssetMap, cosmosAssetMap, osmosisAssetMap } from '../../utils'
+import { bitcoinAssetMap, cosmosAssetMap } from '../../utils'
 import { parseData, writeFiles } from './utils'
 
 const makeEthMockCoingeckoResponse = () => ({
@@ -20,6 +20,7 @@ const makeWethMockCoingeckoResponse = () => ({
     'binance-smart-chain': '0x2170ed0880ac9a755fd29b2688956bd959f933f8',
     'polygon-pos': '0x7ceb23fd6bc0add59e62ac25578270cff1b9f619',
     xdai: '0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1',
+    highbury: '0x3aa8a8b5e1ff947b80bda0ec9e07f2d2f5b783bf',
   },
 })
 
@@ -29,11 +30,11 @@ const makeAvalancheMockCoingeckoResponse = () => ({
   platforms: {},
 })
 
-const makeFoxMockCoingeckoResponse = () => ({
-  id: 'shapeshift-fox-token',
-  symbol: 'fox',
+const makeHighburyMockCoingeckoResponse = () => ({
+  id: 'highbury',
+  symbol: 'fury',
   platforms: {
-    ethereum: '0xc770eefad204b5180df6a14ee197d99d808ee52d',
+    ethereum: '0x595f0ce3e840fdcc0676cf522477b6b46a6bc734',
   },
 })
 
@@ -46,14 +47,6 @@ const makeBtcMockCoingeckoResponse = () => ({
 const makeCosmosMockCoingeckoResponse = () => ({
   id: 'cosmos',
   symbol: 'atom',
-  platforms: {
-    osmosis: 'IBC/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2',
-  },
-})
-
-const makeOsmosisMockCoingeckoResponse = () => ({
-  id: 'osmosis',
-  symbol: 'osmo',
   platforms: {},
 })
 
@@ -96,12 +89,6 @@ describe('adapters:coingecko:utils', () => {
       const expected = { 'cosmos:cosmoshub-4/slip44:118': 'cosmos' }
       expect(result).toEqual(expected)
     })
-
-    it('can make osmosis data', () => {
-      const result = osmosisAssetMap
-      const expected = { 'cosmos:osmosis-1/slip44:118': 'osmosis' }
-      expect(result).toEqual(expected)
-    })
   })
 
   describe('parseData', () => {
@@ -109,10 +96,9 @@ describe('adapters:coingecko:utils', () => {
       const result = parseData([
         makeEthMockCoingeckoResponse(),
         makeWethMockCoingeckoResponse(),
-        makeFoxMockCoingeckoResponse(),
+        makeHighburyMockCoingeckoResponse(),
         makeBtcMockCoingeckoResponse(),
         makeCosmosMockCoingeckoResponse(),
-        makeOsmosisMockCoingeckoResponse(),
         makeThorchainMockCoingeckoResponse(),
         makeAvalancheMockCoingeckoResponse(),
         makePolygonMockCoingeckoResponse(),
@@ -134,16 +120,13 @@ describe('adapters:coingecko:utils', () => {
         'cosmos:cosmoshub-4': {
           'cosmos:cosmoshub-4/slip44:118': 'cosmos',
         },
-        'cosmos:osmosis-1': {
-          'cosmos:osmosis-1/slip44:118': 'osmosis',
-        },
         'cosmos:thorchain-mainnet-v1': {
           'cosmos:thorchain-mainnet-v1/slip44:931': 'thorchain',
         },
         'eip155:1': {
           'eip155:1/slip44:60': 'ethereum',
           'eip155:1/erc20:0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2': 'weth',
-          'eip155:1/erc20:0xc770eefad204b5180df6a14ee197d99d808ee52d': 'shapeshift-fox-token',
+          'eip155:1/erc20:0x595f0ce3e840fdcc0676cf522477b6b46a6bc734': 'fanfury',
         },
         'eip155:43114': {
           'eip155:43114/slip44:60': 'avalanche-2',
@@ -165,6 +148,10 @@ describe('adapters:coingecko:utils', () => {
           'eip155:100/slip44:60': 'xdai',
           'eip155:100/erc20:0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1': 'weth',
         },
+        'eip155:710': {
+          'eip155:710/slip44:60': 'fanfury',
+          'eip155:710/erc20:0x3aa8a8b5e1ff947b80bda0ec9e07f2d2f5b783bf': 'weth',
+        },
       }
       expect(result).toEqual(expected)
     })
@@ -178,7 +165,7 @@ describe('adapters:coingecko:utils', () => {
           assetIdDef: 'efferium',
         },
         bar: {
-          assetIdGhi: 'fox',
+          assetIdGhi: 'fury',
           assetIdJkl: 'shib',
         },
       }

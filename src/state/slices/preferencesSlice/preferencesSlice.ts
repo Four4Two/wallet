@@ -19,6 +19,7 @@ export type FeatureFlags = {
   BnbSmartChain: boolean
   Polygon: boolean
   Gnosis: boolean
+  Highbury: boolean
   ThorSwap: boolean
   IdleFinance: boolean
   Axelar: boolean
@@ -36,7 +37,7 @@ export type FeatureFlags = {
   ZrxSwap: boolean
   Mixpanel: boolean
   LifiSwap: boolean
-  FoxBondCTA: boolean
+  JinxBondCTA: boolean
   DynamicLpAssets: boolean
   ReadOnlyAssets: boolean
   Jaypegz: boolean
@@ -81,6 +82,7 @@ const initialState: Preferences = {
     BnbSmartChain: getConfig().REACT_APP_FEATURE_BNBSMARTCHAIN,
     Polygon: getConfig().REACT_APP_FEATURE_POLYGON,
     Gnosis: getConfig().REACT_APP_FEATURE_GNOSIS,
+    Highbury: getConfig().REACT_APP_FEATURE_HIGHBURY,
     ThorSwap: getConfig().REACT_APP_FEATURE_THOR_SWAP,
     IdleFinance: getConfig().REACT_APP_FEATURE_IDLE,
     Axelar: getConfig().REACT_APP_FEATURE_AXELAR,
@@ -99,7 +101,7 @@ const initialState: Preferences = {
     LifiSwap: getConfig().REACT_APP_FEATURE_LIFI_SWAP,
     CovalentJaypegs: getConfig().REACT_APP_FEATURE_COVALENT_JAYPEGS,
     Mixpanel: getConfig().REACT_APP_FEATURE_MIXPANEL,
-    FoxBondCTA: getConfig().REACT_APP_FEATURE_FOX_BOND_CTA,
+    JinxBondCTA: getConfig().REACT_APP_FEATURE_JINX_BOND_CTA,
     DynamicLpAssets: getConfig().REACT_APP_FEATURE_DYNAMIC_LP_ASSETS,
     ReadOnlyAssets: getConfig().REACT_APP_FEATURE_READ_ONLY_ASSETS,
     OneInch: getConfig().REACT_APP_FEATURE_ONE_INCH,
